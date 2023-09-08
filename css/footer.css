@@ -1,0 +1,9 @@
+footer {
+  display: flex;
+  justify-content: center;
+  background-color:darkmagenta;
+  color:cornflowerblue; 
+  margin: 30px 120px 0px;
+  border-radius: 25px 25px 0px;
+  
+}
