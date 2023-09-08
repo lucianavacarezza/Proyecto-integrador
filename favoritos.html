@@ -5,34 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favoritos</title>
     <link rel="stylesheet" href="./css/favorite.css">
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
-    <h1 class="favoritos">Favoritos</h1>
+    <header>
+    
+        <article class="clase" >
+           <div class="formula">
+             <form class="formulario" action="resultados.html" method="GET">
+                
+                    
+                    <input class="cuadro" id="bucador" type="text" name="buscador" value="" >
+                    <button class="boton" type="submit">Enviar</button>
+                </form> 
+           </div>
+            <div class="imagen">
+                <img src="./imgs/logo.png" alt="Imagen logo">
+            </div>
+            
+    
+        </article>
+    
+        <nav>
+            
+            <ul class="lista">
+                <li class="gen"><a href="./home_del_sitio.html">Home</a></li>
+                <li class="gen">Generos</li>
+                <li class="gen"> <a href="./favoritos.html">Favoritos</a></li> 
+                
+            </ul>
+           
+        </nav>
+    
+    </header>
+    <main>
+    <h1 class="favoritos">Tus favoritos</h1>
     <section class="peliculas">
-        <h2 class="pelisfavoritas">Películas favoritas</h2>
-        <article class="viernes13">
-            <img class="fotoviernes13" src="./imgs/viernes 13.jpg" alt="">
-            <h3 class="tituloviernes13">Viernes 13</h3>
+        <article class="masacre">
+            <img class="fotomasacre" src="./imgs/Masacre_en_Texas.webp" alt="masacre en texas">
+                <h3 class="titulomasacre">Masacre en Texas</h3>
         </article>
         <article class="misterioalavista">
-            <img class="fotomisterioalavista" src="./imgs/MisterioALaVista.webp" alt="">
+            <img class="fotomisterioalavista" src="./imgs/misterio_a_la_vista.jpeg" alt="Misterio a la Vista">
                 <h3 class="titulomisterioalavista">Misterio a la Vista</h3>
         </article>
-        <article class="mammamia">
-            <img class="fotomamma" src="./imgs/mamma_mia.jpeg" alt="">
-            <h3 class="titulomamma">Mamma Mia</h3>
-        </article>
-    </section>
-    <section class="series">
-        <h2 class="seriesfavoritas">Series favoritas</h2>
-        <article class="glee">
-            <img class="fotoglee" src="./imgs/glee.webp" alt="">
-            <h3 class="tituloglee">Glee</h3>
+        <article class="annie">
+            <img class="fotoannie" src="./imgs/annie.webp" alt="Annie">
+                <h3 class="tituloannie">Annie</h3>
+        </article>    
+        <article class="gilmoregirls">
+            <img class="fotogilmoregirls" src="./imgs/gilmore_girls.webp"/>
+                <h3 class="titulosgilmoregirls">Gilmore Girls</h3>
         </article>
         <article class="los100">
-            <img class="fotolos100" src="./imgs/the100.webp" alt="">
+            <img class="fotolos100" src="./imgs/los 100.webp" alt="">
             <h3 class="titulolos100">Los 100</h3>
         </article>
     </section>
+    </main>
+    <footer>
+        <p>Luciana Vacarezza | Mercedes Lapasset | Sol Cappella</p>
+    </footer>
 </body>
 </html>
