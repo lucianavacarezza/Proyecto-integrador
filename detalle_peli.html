@@ -4,55 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles_detalle_peli.css">
+    <link rel="stylesheet" href="./css/header.css">
     <title>Detalle pelicula</title>
 </head>
 <body>
-    <main>
-        <section class="mitad1">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            <article class="pelicula">
+    
+    <header>
+    
+        <article class="clase" >
+           <div class="formula">
+             <form class="formulario" action="resultados.html" method="GET">
                 
-                <img src="./img/MammaMiaTeaserPoster.jpeg" alt="">
-
-            </article>
-            <article>
-                <ul class="Generico">
-                    <li> <h4>Duración: 108 min</h3></li>
-                    <li> <h4>Genero: Musical | Romance | Comedia</h3></li>                  
-                </ul>
-                
-            </article>
-            <article class="Fav">
-            <h4>Añadir a Favoritos</h4>    
-            </article>
-
+                    
+                    <input class="cuadro" id="bucador" type="text" name="buscador" value="" >
+                    <button class="boton" type="submit">Enviar</button>
+                </form> 
+           </div>
+            <div class="imagen">
+                <img src="./imgs/logo.png" alt="Imagen logo">
+            </div>
             
+    
+        </article>
+    
+        <nav>
+            
+            <ul class="lista">
+                <li class="gen">Home</li>
+                <li class="gen">Generos</li>
+                <li class="gen"> Favoritos</li>
+                
+            </ul>
+           
+        </nav>
+    
+    </header>
+    <main> 
+        <section class="mitad1"> 
+            <div>
+                <article><h4 class="calificacion">Calificacion:3/5</h4></article>
+                <article><h4 class="fav">Añadir a <a href="./favoritos.html"> Favoritos</a></h4></article>
+                
+            </div>
+           
+            
+
+            <article class="pelicula">
+               
+                
+               <img class="imatilda" src="./imgs/matilda.jpeg" alt="Imagen Matilda">
+
+            </article>
+        
+                <br>
+                <br>
+        
         </section>
 
+
         <section class= "otra_mitad">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h1 class="nombre">Mamma Mia! La pelicula</h1>
-            <div>
-                <ul>
-                    <li>Estreno: 2008</li>
-                    <li>Pais: Reino Unido</li>
-                    <li>Recomendado: Adolescentes</li>
-                </ul>
+
+            <article class="titulo">
+                <h1 class="Matilda">Matilda, de Roald Dahl: El musical<h1>
+            </article>
+
+            <div class="detalles">
+                <ul class="generico">
+                    <li> <h4>Duración: 108 min</h4></li>
+                    <li><h4>Estreno: 2/12/2022</h4></li>
+                    <li> <h4>Genero: Musical | Infantil</h4></li>                  
+                    </ul>
+                
             </div>
+    
             <article>
                 <h3> Sinopsis: </h3>
             </article>
             <article>
                 <p>
-                    Versión cinematográfica del popular musical de ABBA. Una joven (Amanda Seyfried) que ha crecido en una pequeña isla griega, ha sido educada por una madre rebelde y poco convencional (Streep), que siempre se ha negado a revelarle la identidad de su padre. Cuando, por fin, parece que la joven está a punto de saberlo, aparecen tres posibles candidatos (Brosnan, Firth y Skarsgard). (FILMAFFINITY)        
+                    Adaptación del musical premiado con el Tony y el Olivier. Matilda cuenta la historia de una niña extraordinaria que, armada con una mente aguda y una imaginación vívida, se atreve a tomar una posición para cambiar su historia con resultados milagrosos. 
                 </p>
             </article>
 
