@@ -1,0 +1,143 @@
+
+li { 
+    list-style-type: none;
+}
+body {
+background-color: black;    
+ } 
+ul, ol {
+   padding: 0; /* relleno */
+ }
+li {
+   list-style-type: none; /* viñetas*/
+}
+
+a { 
+  text-decoration: none; color: #000;  /* text-decoration es negrita, cursiva y lo otro el color */
+}
+.h3-todos {
+    text-decoration:none;
+}
+.annie-peli {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: #c6c6c6;
+    }
+
+.annie-div {
+    display: flex;
+    flex-direction: row;
+    background-color: #4a4fa2;
+    justify-content: space-around;
+    height: 220px;
+    align-items: center;
+}
+
+
+.go-peli {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: #c6c6c6;
+    }
+
+    .go-div {
+        display: flex;
+        flex-direction: row;
+        background-color: #4a4fa2;
+        justify-content: space-around;
+        height: 220px;
+        align-items: center;
+    }
+    
+.sing-peli {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-left: 10px;
+color: #c6c6c6;
+}
+
+.sing-div {
+    display: flex;
+    flex-direction: row;
+    background-color: #4a4fa2;
+    justify-content: space-around;
+    height: 220px;
+    align-items: center;
+}
+.matilda-peli {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: #c6c6c6;
+    }
+    .matilda-div {
+        display: flex;
+        flex-direction: row;
+        background-color: #4a4fa2;
+        justify-content: space-around;
+        height: 220px;
+        align-items: center;
+    }
+
+.annie-ft {
+    height: 180px;
+    width: 320px;
+    margin: 0;
+
+    }
+
+.go-ft {
+    height: 180px;
+    width: 320px;
+    margin: 0;
+        }
+
+.sing-ft {
+    height: 180px;
+    width: 320px;
+    margin: 0;
+        }
+.matilda-ft {
+    height: 180px;
+    width: 320px;
+    margin: 0;
+                }
+    
+.titulo-annie {
+    margin-bottom: 0;
+    font-size: xx-large;
+    }
+.titulo-go {
+    margin-bottom: 0;
+    font-size: xx-large;
+        }
+.titulo-sing {
+    margin-bottom: 0;
+    font-size: xx-large;
+        }
+.titulo-matilda {
+    margin-bottom: 0;
+    font-size: xx-large;
+        }
+.genero-total {
+color: white;
+}
+.titulo-genero {
+color: #c6c6c6;
+font-size: xx-large;
+text-align: center;
+}
