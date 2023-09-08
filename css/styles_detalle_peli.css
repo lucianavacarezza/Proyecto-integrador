@@ -1,0 +1,34 @@
+*{box-sizing: border-box;}
+body {
+    background-color: blueviolet;
+}
+main{
+    height: 100%vh;
+    width: 100%vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.mitad1 { 
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+.otra_mitad{ 
+    display: flex;
+    flex-direction: column;
+    width: 70%; 
+
+}
+
+.pelicula {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.otra_mitad .nombre 
+h1 { 
+    display: flex;
+    align-items: center;
+}
