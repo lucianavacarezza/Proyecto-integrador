@@ -1,10 +1,11 @@
 * { 
    box-sizing: border-box;  /*descuenta automaticamente del ancho y alto lo que agregamos de relleno y borde*/
 }
-    body {
-    max-width: 1200px;
-    
- } 
+
+body {
+   background-color: #000;
+}
+
 ul, ol {
    padding: 0; /* relleno */
  }
@@ -16,8 +17,17 @@ a {
   text-decoration: none; color: #000;  /* text-decoration es negrita, cursiva y lo otro el color */
 }
 
+
+main {
+   color:  #c6c6c6;
+   margin: 0;
+}
+
 .peliculaspopulares {
-   color: #B695C0;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   color: #c6c6c6;
    text-decoration: underline;
 }
 
@@ -25,7 +35,7 @@ a {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
    
 }
@@ -129,14 +139,14 @@ a {
 }
 
 .lomasvistoserie {
-   color: #B695C0;
+   color:  #c6c6c6;
    text-decoration: underline;
 }
 
 .carrusel2 {
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
 }
 
@@ -242,14 +252,14 @@ a {
 }
 
 .peliculasmasvaloradas {
-   color: #B695C0;
+   color:  #c6c6c6;
    text-decoration: underline;
 }
 
 .carrusel3 {
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
 }
 
