@@ -1,13 +1,13 @@
 *{box-sizing: border-box;}
 header {
-   background-color: rgb(253, 182, 255);
+   background-color:  #c6c6c6;
     display: flex;
     flex-direction: column;
     
 }
-    
+
 .clase { 
-    background-color: blueviolet;
+    background-color:#4a4fa2 ;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -29,7 +29,7 @@ img {
 }
  
 .lista {
-    background-color: rgb(253, 182, 255);
+    background-color:  #c6c6c6;
     display: flex;
     justify-content: space-around;
     flex-direction: row;  
@@ -58,8 +58,11 @@ img {
     font-size: x-large;
     width: 70%;
     border-radius: 15px 0 0 15px;
+    background-color:  #c6c6c6;
+    color: white;
 }
 .boton {
     border-radius: 0 15px 15px 0;
-    height: 35px
+    height: 35px;
+    background-color:  #c6c6c6;
 }

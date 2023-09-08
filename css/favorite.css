@@ -1,10 +1,11 @@
 * { 
     box-sizing: border-box;  /*descuenta automaticamente del ancho y alto lo que agregamos de relleno y borde*/
  }
-     body {
-     max-width: 1200px;
-     
-  } 
+
+ body {
+   background-color: #000;
+ }
+
  ul, ol {
     padding: 0; /* relleno */
   }
@@ -16,14 +17,17 @@
    text-decoration: none; color: #000;  /* text-decoration es negrita, cursiva y lo otro el color */
  }
 
+main {
+   color: white;
+}
+
 .favoritos {
-    color: #B695C0;
-    background-color: #4a4fa2;
+    color: #c6c6c6;
 }
 .peliculas {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -33,111 +37,112 @@
     text-decoration: underline;
 }
 
-.viernes13 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #4a4fa2;
-    border-color: #882b8d;
- }
- 
- .fotoviernes13 {
-    height: 250px;
-    width: 200px;
-    margin: 0;
- }
- 
- .tituloviernes13 {
-    margin: 0;
- }
+.masacre {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #4a4fa3;
+   border-color: #882b8d;
+}
 
- .misterioalavista {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #4a4fa2;
-    margin-left: 10px;
- }
- 
- .fotomisterioalavista {
-    height: 250px;
-    width: 200px;
-    margin: 0;
- }
- 
- .titulomisterioalavista {
-    margin: 0;
- }
+.fotomasacre {
+   height: 112px;
+   width: 200px;
+   margin: 0;
+}
 
- .peliculamammamia {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #4a4fa2;
-    margin-left: 10px;
- }
- 
- .fotomamma {
-    height: 250px;
-    width: 200px;
-    margin: 0;
- }
- 
- .titulomamma {
-    margin: 0;
- }
+.titulomasacre {
+   margin: 0;
+}
 
- .series {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.misterioalavista {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #4a4fa2;
+   margin-left: 10px;
+}
+
+.fotomisterioalavista {
+   height: 112px;
+   width: 200px;
+   margin: 0;
+}
+
+.titulomisterioalavista {
+   margin: 0;
+}
+
+.annie {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #4a4fa2;
+   margin-left: 10px;
+}
+
+.fotoannie {
+   height: 112px;
+   width: 200px;
+   margin: 0;
+}
+
+.tituloannie {
+   margin: 0;
+}
+
+.series {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
 }
 
 .seriesfavoritas {
-    color: #882b8d ;
-    text-decoration: underline;
+   color: #882b8d ;
+   text-decoration: underline;
 }
 
-.glee {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #4a4fa3;
-    border-color: #882b8d;
-    margin-left: 10px;
- }
- 
- .fotoglee {
-    height: 250px;
-    width: 200px;
-    margin: 0;
- }
- 
- .tituloglee {
-    margin: 0;
- }
+.gilmoregirls {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   background-color: #4a4fa3;
+   border-color: #882b8d;
+   margin-left: 10px;
+}
+
+.fotogilmoregirls {
+   height: 112px;
+   width: 200px;
+   margin: 0;
+}
+
+.titulogilmoregirls {
+   margin: 0;
+}
 
 .los100 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #4a4fa3;
-    border-color: #882b8d;
-    margin-left: 10px;
- }
- 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #4a4fa3;
+   border-color: #882b8d;
+   margin-left: 10px;
+}
+
 .fotolos100 {
-    height: 250px;
-    width: 200px;
-    margin: 0;
- }
- 
+   height: 112px;
+   width: 200px;
+   margin: 0;
+}
+
 .titulolos100 {
-    margin: 0;
- }
+   margin: 0;
+}
