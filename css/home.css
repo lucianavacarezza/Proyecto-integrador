@@ -24,11 +24,13 @@ a {
 .carrusel1 {
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
+   
 }
 
-.peliculaviernes13 {
+.peliculamasacre {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -37,17 +39,17 @@ a {
    border-color: #882b8d;
 }
 
-.fotoviernes13 {
-   height: 250px;
+.fotomasacre {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.tituloviernes13 {
+.titulomasacre {
    margin: 0;
 }
 
-.elconjuro {
+.ouija {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -58,13 +60,13 @@ a {
    margin-left: 10px;
 }
 
-.fotoelconjuro {
-   height: 250px;
+.fotoouija {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.tituloelconjuro2 {
+.tituloouija {
    margin: 0;
 }
 
@@ -78,7 +80,7 @@ a {
 }
 
 .fotomisterioalavista {
-   height: 250px;
+   height: 112px;
    width: 200px;
    margin: 0;
 }
@@ -87,7 +89,7 @@ a {
    margin: 0;
 }
 
-.peliculaodisea {
+.peliculatiempo {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
@@ -97,17 +99,17 @@ a {
    margin-left: 10px;
 }
 
-.fotoodisea {
-   height: 250px;
+.fototiempo {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.tituloodisea {
+.titulotiempo {
    margin: 0;
 }
 
-.peliculamammamia {
+.peliculaannie {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -116,13 +118,13 @@ a {
    margin-left: 10px;
 }
 
-.fotomamma {
-   height: 250px;
+.fotoannie {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.titulomamma {
+.tituloannie {
    margin: 0;
 }
 
@@ -138,7 +140,7 @@ a {
    align-items: center;
 }
 
-.friends {
+.theoffice {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -147,39 +149,20 @@ a {
    border-color: #882b8d;
 }
 
-.fotofriends {
-   height: 250px;
+.fototheoffice {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.titulofriends {
+.titulotheoffice {
    margin: 0;
 }
 
-.simpsons {
+.gilmoregirls {
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background-color: #4a4fa3;
-   border-color: #882b8d;
-   margin-left: 10px;
-}
-
-.fotosimpsons {
-   height: 250px;
-   width: 200px;
-   margin: 0;
-}
-
-.titulosimpsons {
-   margin: 0;
-}
-
-.glee {
-   display: flex;
-   flex-direction: column;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
    background-color: #4a4fa3;
@@ -187,13 +170,34 @@ a {
    margin-left: 10px;
 }
 
-.fotoglee {
-   height: 250px;
+.fotogilmoregirls {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.tituloglee {
+.titulogilmoregirls {
+   margin: 0;
+}
+
+.go {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   background-color: #4a4fa3;
+   border-color: #882b8d;
+   margin-left: 10px;
+}
+
+.fotogo {
+   height: 112px;
+   width: 200px;
+   margin: 0;
+}
+
+.titulogo {
    margin: 0;
 }
 
@@ -208,7 +212,7 @@ a {
 }
 
 .fotolos100 {
-   height: 250px;
+   height: 112px;
    width: 200px;
    margin: 0;
 }
@@ -228,7 +232,7 @@ a {
 }
 
 .fotoblackmirror {
-   height: 250px;
+   height: 112px;
    width: 200px;
    margin: 0;
 }
@@ -249,7 +253,7 @@ a {
    align-items: center;
 }
 
-.scream5 {
+.lapurga {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -258,17 +262,17 @@ a {
    border-color: #882b8d;
 }
 
-.fotoscream5 {
-   height: 250px;
+.fotoslapurga {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.tituloscream5 {
+.titulolapurga {
    margin: 0;
 }
 
-.hsm {
+.sing {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -278,18 +282,18 @@ a {
    margin-left: 15px;
 }
 
-.fotohsm {
-   height: 250px;
+.fotosing {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.titulohsm {
+.titulosing {
    margin: 0;
    text-align: center;
 }
 
-.bohemian {
+.matilda {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -299,18 +303,18 @@ a {
    margin-left: 15px;
 }
 
-.fotobohemian {
-   height: 250px;
+.fotomatilda {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.titulobohemian {
+.titulomatilda {
    margin: 0;
    text-align: center;
 }
 
-.starwars {
+.terminator {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -320,18 +324,18 @@ a {
    margin-left: 15px;
 }
 
-.fotostarswars {
-   height: 250px;
+.fototerminator {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.titulostarwars {
+.tituloterminator {
    margin: 0;
    text-align: center;
 }
 
-.et {
+.transformer {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -341,23 +345,13 @@ a {
    margin-left: 15px;
 }
 
-.fotoet {
-   height: 250px;
+.fototransformer {
+   height: 112px;
    width: 200px;
    margin: 0;
 }
 
-.tituloet {
+.titulotransformer {
    margin: 0;
    text-align: center;
 } 
-
-footer {
-   display: flex;
-   justify-content: center;
-   background-color: darkmagenta;
-   color: cornflowerblue;
-   margin: 30px 120px 0px;
-   border-radius: 25px 25px 25px; 
-}
-/* cambiar colores */
