@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados de Busqueda</title>
+    <link rel="stylesheet" href="./css/resultados.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title> Resultado de Búsqueda </title>
 </head>
 <body>
+    
+    <header>
+    
+        <article class="clase" >
+           <div class="formula">
+             <form class="formulario" action="resultados.html" method="GET">
+                
+                    
+                    <input class="cuadro" id="bucador" type="text" name="buscador" value="" >
+                    <button class="boton" type="submit">Enviar</button>
+                </form> 
+           </div>
+            <div class="imagen">
+                <img src="./imgs/logo.png" alt="Imagen logo">
+            </div>
+            
+    
+        </article>
+    
+        <nav>
+            
+            <ul class="lista">
+                <li class="gen"><a href="./home_del_sitio.html">Home</a></li>
+                <li class="gen"><a href="./generos.html"> Generos</a></li>
+                <li class="gen"> <a href="./favoritos.html">Favoritos</a></li> 
+                
+            </ul>
+           
+        </nav>
+    
+    </header>
 
-</body>
-</html>
+    <main>
+        <section class="resultados">
+         <h1>Resultados para: <strong>"Matilda"</strong></h1>
+            <ul class="lista-resultados">
+                    <div>
+                        <img class="imagenmat" src="./imgs/matilda.jpeg" alt="Imagen Matilda">
+                    </div>
+                    <div class="informacion">
+                        <h2><a href="detalle_peli.html">Matilda, de Roald Dahl: El musical</a></h2>
+                        <article><a href="./favoritos.html"> Añadir a Favoritos</a></h4></article>
+
+                    </div>
+            </ul>
+            <p class="sin-resultados">No se encontraron más resultados para el término de búsqueda</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Luciana Vacarezza | Mercedes Lapasset | Sol Cappella</p>
+    </footer>

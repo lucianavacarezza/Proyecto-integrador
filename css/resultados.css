@@ -1,0 +1,77 @@
+body {
+    background-color: black; 
+     } 
+   
+
+     .resultados {
+        text-align: center;
+        color: #c6c6c6;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .resultados h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #c6c6c6;
+        align-items: center;
+
+    }
+    
+    .lista-resultados {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .lista-resultados div {
+        background-color: #c6c6c6;
+        border: 1px solid #333;
+        margin: 10px;
+        padding: 10px;
+        width: 324px; 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .imagenmat {
+        width: 306px; 
+        height: 180px;
+    }
+    
+    .lista-resultados h2 {
+        font-size: 18px;
+        margin: 10px 0;
+        color: #4a4fa2;
+    }
+
+    .favorito {
+  background-color:khaki;
+
+    }
+.resultados div article {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color:darkkhaki;
+    height: 40px;
+   border-radius: 15px 15px 15px 15px; 
+   margin: 5px;
+}
+.informacion { 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.informacion h2 {
+    color: black;
+}
