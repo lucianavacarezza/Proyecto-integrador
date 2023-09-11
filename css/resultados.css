@@ -28,44 +28,61 @@ body {
         list-style: none;
     }
     
-    .lista-resultados div {
-        background-color: #c6c6c6;
-        border: 1px solid #333;
-        margin: 10px;
-        padding: 10px;
-        width: 324px; 
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+
+.lista-resultados div {
+    background-color: #4a4fa2;
+    border: 1px solid #333;
+    margin: 0;
+    padding: 15px;
+    width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.lista-resultados div img {
+    display: block; 
+    margin: 0 auto;
+}
+
+    .lista-resultados div h2 {
+        font-size: 30px;
 
     }
     
     .imagenmat {
-        width: 306px; 
-        height: 180px;
+    display: block;
+    width: 400px; 
+    max-width: 100%;
+    padding: 10px; 
+    height: auto; 
+    margin: 0;
+
     }
     
     .lista-resultados h2 {
-        font-size: 18px;
+        /* font-size: 18px; */
+        font-size: 36px;
         margin: 10px 0;
         color: #4a4fa2;
     }
 
-    .favorito {
-  background-color:khaki;
-
-    }
+    
+    
 .resultados div article {
     width: 50%;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color:darkkhaki;
-    height: 40px;
-   border-radius: 15px 15px 15px 15px; 
-   margin: 5px;
+    background-color: darkgrey;
+    border-radius: 15px 15px 15px 15px; 
+    margin: 5px;
+    font-size: 20px; 
+    height: 50px; 
+
 }
+
 .informacion { 
     align-items: center;
     display: flex;
@@ -74,4 +91,5 @@ body {
 
 .informacion h2 {
     color: black;
+
 }
