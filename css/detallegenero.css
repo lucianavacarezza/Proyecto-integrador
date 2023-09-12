@@ -97,6 +97,7 @@ color: #c6c6c6;
     height: 180px;
     width: 320px;
     margin: 0;
+    border-radius: 15px 15px 15px 15px;
 
     }
 
@@ -104,17 +105,20 @@ color: #c6c6c6;
     height: 180px;
     width: 320px;
     margin: 0;
+    border-radius: 15px 15px 15px 15px;
         }
 
 .sing-ft {
     height: 180px;
     width: 320px;
     margin: 0;
+    border-radius: 15px 15px 15px 15px;
         }
 .matilda-ft {
     height: 180px;
     width: 320px;
     margin: 0;
+    border-radius: 15px 15px 15px 15px;
                 }
     
 .titulo-annie {
