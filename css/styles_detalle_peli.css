@@ -40,7 +40,7 @@ main{
     align-items: center;
     background-color: beige;
     height: 40px;
-   border-radius: 15px 15px 15px 15px; 
+    border-radius: 15px 15px 15px 15px; 
    margin: 5px;
 }
 .calificacion,.fav {
