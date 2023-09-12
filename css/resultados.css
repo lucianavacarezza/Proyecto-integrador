@@ -14,7 +14,6 @@ body {
     
     .resultados h1 {
         font-size: 24px;
-        margin-bottom: 10px;
         color: #c6c6c6;
         align-items: center;
 
@@ -22,8 +21,6 @@ body {
     
     .lista-resultados {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
         padding: 0;
         list-style: none;
     }
@@ -31,18 +28,17 @@ body {
 
 .lista-resultados div {
     background-color: #4a4fa2;
-    border: 1px solid #333;
     margin: 0;
     padding: 15px;
     width: 400px; 
     display: flex;
     flex-direction: column;
     align-items: center; 
+    border-radius: 15px 15px 15px 15px; 
 }
 
 .lista-resultados div img {
-    display: block; 
-    margin: 0 auto;
+    margin: 0 ;
 }
 
     .lista-resultados div h2 {
@@ -57,11 +53,11 @@ body {
     padding: 10px; 
     height: auto; 
     margin: 0;
+    border-radius: 15px 15px 15px 15px; 
 
     }
     
     .lista-resultados h2 {
-        /* font-size: 18px; */
         font-size: 36px;
         margin: 10px 0;
         color: #4a4fa2;
@@ -87,6 +83,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+
 }
 
 .informacion h2 {
