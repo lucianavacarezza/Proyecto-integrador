@@ -1,3 +1,7 @@
+a { 
+    text-decoration: none; color: #000;  /* text-decoration es negrita, cursiva y lo otro el color */
+  }
+
 body {
     background-color: black; 
      } 
@@ -13,7 +17,7 @@ body {
     }
     
     .resultados h1 {
-        font-size: 24px;
+        font-size: 34px;
         color: #c6c6c6;
         align-items: center;
 
@@ -42,7 +46,8 @@ body {
 }
 
     .lista-resultados div h2 {
-        font-size: 30px;
+        font-size: 24px;
+        color: #c6c6c6;
 
     }
     
@@ -76,6 +81,7 @@ body {
     margin: 5px;
     font-size: 20px; 
     height: 50px; 
+    border: #c6c6c6 solid 5px;
 
 }
 
@@ -88,5 +94,4 @@ body {
 
 .informacion h2 {
     color: black;
-
 }
