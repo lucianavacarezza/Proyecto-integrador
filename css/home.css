@@ -13,10 +13,15 @@ li {
    list-style-type: none; /* viñetas*/
 }
 
-a { 
-  text-decoration: none; color: #000;  /* text-decoration es negrita, cursiva y lo otro el color */
+.link { 
+  text-decoration: none; color: #c6c6c6;  /* text-decoration es negrita, cursiva y lo otro el color */
+  margin-bottom: 10px;
 }
 
+a {
+   text-decoration: none;
+   color: #000;
+}
 
 main {
    color:  #c6c6c6;
@@ -35,7 +40,7 @@ main {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: space-evenly;
+   justify-content: space-around;
    align-items: center;
    
 }
@@ -47,6 +52,7 @@ main {
    align-items: center;
    background-color: #4a4fa2;
    border-radius: 15px 15px 15px 15px;
+   height: auto;
 }
 
 .fotomasacre {
@@ -69,7 +75,6 @@ main {
    background-color: #4a4fa2;
    border-color: #882b8d;
    border-width: 10px;
-   margin-left: 10px;
    height: auto;
    width: 200px;
    border-radius: 15px 15px 15px 15px; 
@@ -93,7 +98,6 @@ main {
    justify-content: center;
    align-items: center;
    background-color: #4a4fa2;
-   margin-left: 10px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -115,7 +119,6 @@ main {
    justify-content: center;
    align-items: center;
    background-color: #4a4fa2;
-   margin-left: 10px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -136,7 +139,6 @@ main {
    justify-content: center;
    align-items: center;
    background-color: #4a4fa2;
-   margin-left: 10px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -192,7 +194,6 @@ main {
    align-items: center;
    background-color: #4a4fa3;
    border-color: #882b8d;
-   margin-left: 10px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -216,7 +217,6 @@ main {
    align-items: center;
    background-color: #4a4fa3;
    border-color: #882b8d;
-   margin-left: 10px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -239,7 +239,6 @@ main {
    align-items: center;
    background-color: #4a4fa3;
    border-color: #882b8d;
-   margin-left: 10px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -261,7 +260,6 @@ main {
    align-items: center;
    background-color: #4a4fa3;
    border-color: #882b8d;
-   margin-left: 10px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -319,7 +317,6 @@ main {
    align-items: center;
    background-color: #4a4fa2;
    border-color: #882b8d;
-   margin-left: 15px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -342,7 +339,6 @@ main {
    align-items: center;
    background-color: #4a4fa2;
    border-color: #882b8d;
-   margin-left: 15px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -367,7 +363,6 @@ main {
    width: 200px;
    background-color: #4a4fa2;
    border-color: #882b8d;
-   margin-left: 15px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -390,7 +385,6 @@ main {
    align-items: center;
    background-color: #4a4fa2;
    border-color: #882b8d;
-   margin-left: 15px;
    border-radius: 15px 15px 15px 15px; 
 }
 
