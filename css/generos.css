@@ -22,11 +22,14 @@
     margin: 0;
  }
 
+ .link{
+    color: #c6c6c6;
+ }
  .titulogpeliculas {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .ulpeliculas {
@@ -43,7 +46,7 @@
     background-color: #4a4fa2;
     height: 40px;
     width: 50%;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 10px;
     border-radius: 15px 15px 15px 15px;
 }
@@ -55,7 +58,7 @@
     background-color: #4a4fa2;
     height: 40px;
     width: 50%;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 10px;
     border-radius: 15px 15px 15px 15px;
 }
@@ -67,7 +70,7 @@
     background-color: #4a4fa2;
     height: 40px;
     width: 50%;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 10px;
     border-radius: 15px 15px 15px 15px;
 }
@@ -80,7 +83,7 @@
     background-color: #4a4fa2;
     height: 40px;
     width: 50%;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 10px;
     border-radius: 15px 15px 15px 15px;
 }
@@ -89,7 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .ulseries {
@@ -106,7 +109,7 @@
     background-color: #4a4fa2;
     height: 40px;
     width: 50%;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 10px;
     border-radius: 15px 15px 15px 15px;
 }
@@ -118,7 +121,7 @@
     background-color: #4a4fa2;
     height: 40px;
     width: 50%;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 10px;
     border-radius: 15px 15px 15px 15px;
 }
@@ -131,7 +134,7 @@
     background-color: #4a4fa2;
     height: 40px;
     width: 50%;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 10px;
     border-radius: 15px 15px 15px 15px;
 }
