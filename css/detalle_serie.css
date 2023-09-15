@@ -30,7 +30,7 @@ main{
     align-items: center;
     background-color: #c6c6c6;
     height: 40px;
-    width: 50%;
+    width: 100%;
     border-radius: 15px 15px 15px 15px; 
     margin: 5px;
 }
@@ -80,20 +80,20 @@ main{
     background-color: #4a4fa2;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: #4a4fa2;
     height: 50px;
     border-radius: 15px 15px 15px 15px;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 
 .gilmore { 
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     color: #c6c6c6;
+    font-size: x-large;
+    justify-content: center;
 }
 .detalles {
     display: flex; 
@@ -107,8 +107,10 @@ main{
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 100%;
+    padding-inline-start: 0;
+
+    
 }
 .generico {
     background-color: #c6c6c6;
@@ -120,6 +122,8 @@ main{
 .detalles li { 
     text-decoration: none;
     list-style-type: none;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
@@ -169,8 +173,30 @@ main{
 
 }
 @media (max-width: 620px)
+
+
 {
-    .cali_fav {
+    .mitad1 div {
         
+        flex-direction: column;
+        width: 100%;
+
     }
+    .fav, .cali {
+        width: 600px;
+
+    }
+    .detalles ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .titulo {
+        margin-left: 0px;
+        margin-right: 0px;
+       
+    }
+   
+    
 }
