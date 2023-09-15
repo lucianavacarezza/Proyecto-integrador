@@ -17,88 +17,101 @@
    text-decoration: none; color: #000;  /* text-decoration es negrita, cursiva y lo otro el color */
  }
 
-main {
-   color: white;
+ main {
+   color:  #c6c6c6;
+   margin: 0;
 }
-
 .favoritos {
     color: #c6c6c6;
 }
 .peliculas {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
-.pelisfavoritas {
-    color: #882b8d ;
-    text-decoration: underline;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 5%;
 }
 
 .masacre {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   background-color: #4a4fa3;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px;
+   background-color: #4a4fa2;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
+
+
 }
 
 .fotomasacre {
    height: 112px;
    width: 200px;
-   margin: 0;
+   margin: 0; 
    border-radius: 15px 15px 15px 15px;
+  
 }
 
 .titulomasacre {
-   margin: 0;
+   margin: 0%;
+   margin-top: 14%;
 }
 
 .misterioalavista {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   margin-left: 10px;
-   border-radius: 15px 15px 15px 15px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotomisterioalavista {
    height: 112px;
    width: 200px;
-   margin: 0;
+   margin: 0%;
    border-radius: 15px 15px 15px 15px;
 }
 
 .titulomisterioalavista {
-   margin: 0;
+   margin: 0%;
+   margin-top: 14%;
 }
+
 
 .annie {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   margin-left: 10px;
-   border-radius: 15px 15px 15px 15px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotoannie {
    height: 112px;
    width: 200px;
    margin: 0;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
 }
 
 .tituloannie {
-   margin: 0;
+   margin: 0%;
+   margin-top: 14%;
 }
+
 
 .series {
    display: flex;
@@ -112,46 +125,59 @@ main {
    text-decoration: underline;
 }
 
+
 .gilmoregirls {
    display: flex;
    flex-direction: column;
-   flex-wrap: wrap;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   margin-left: 10px;
-   border-radius: 15px 15px 15px 15px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotogilmoregirls {
    height: 112px;
    width: 200px;
    margin: 0;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
 }
 
-.titulogilmoregirls {
-   margin: 0;
+.titulosgilmoregirls {
+   margin: 0%;
+   margin-top: 14%;
 }
+
 
 .los100 {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   background-color: #4a4fa3;
-   border-color: #882b8d;
-   margin-left: 10px;
-   border-radius: 15px 15px 15px 15px;
+   background-color: #4a4fa2;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotolos100 {
    height: 112px;
    width: 200px;
    margin: 0;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
 }
 
 .titulolos100 {
-   margin: 0;
+   margin: 0%;
+   margin-top: 14%;
+}
+
+.links {
+   color: #c6c6c6;
+   font-size: larger;
 }
