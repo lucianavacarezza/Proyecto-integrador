@@ -55,11 +55,12 @@ img {
 
 }
 .cuadro {
-    font-size: x-large;
+    height: 32%;
+    font-size: large;
     width: 70%;
     border-radius: 15px 0 0 15px;
     background-color:  #c6c6c6;
-    color: white;
+    color: #000;
 }
 .boton {
     border-radius: 0 15px 15px 0;
