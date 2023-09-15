@@ -26,9 +26,11 @@
 }
 .peliculas {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 5%;
 }
 
 .masacre {
