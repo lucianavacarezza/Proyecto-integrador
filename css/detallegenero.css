@@ -26,6 +26,7 @@ a {
     align-items: center;
     margin-left: 10px;
     color: #c6c6c6;
+    width: 300px;
     }
 
 .annie-div {
@@ -46,9 +47,10 @@ a {
     align-items: center;
     margin-left: 10px;
     color: #c6c6c6;
+    width: 300px;
     }
 
-    .go-div {
+.go-div {
         display: flex;
         flex-direction: row;
         background-color: #4a4fa2;
@@ -65,6 +67,7 @@ justify-content: center;
 align-items: center;
 margin-left: 10px;
 color: #c6c6c6;
+width: 300px;
 }
 
 .sing-div {
@@ -83,6 +86,7 @@ color: #c6c6c6;
     align-items: center;
     margin-left: 10px;
     color: #c6c6c6;
+    width: 300px;
     }
     .matilda-div {
         display: flex;
@@ -97,6 +101,7 @@ color: #c6c6c6;
     height: 180px;
     width: 320px;
     margin: 0;
+    border-radius: 15px 15px 15px 15px;
 
     }
 
@@ -104,17 +109,20 @@ color: #c6c6c6;
     height: 180px;
     width: 320px;
     margin: 0;
+    border-radius: 15px 15px 15px 15px;
         }
 
 .sing-ft {
     height: 180px;
     width: 320px;
     margin: 0;
+    border-radius: 15px 15px 15px 15px;
         }
 .matilda-ft {
     height: 180px;
     width: 320px;
     margin: 0;
+    border-radius: 15px 15px 15px 15px;
                 }
     
 .titulo-annie {
