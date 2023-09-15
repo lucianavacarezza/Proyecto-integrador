@@ -35,6 +35,7 @@ main{
 .mitad1 div article { 
     width: 50%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -42,25 +43,30 @@ main{
     height: 40px;
    border-radius: 15px 15px 15px 15px; 
    margin: 5px;
-   flex-direction: row;
 }
 .calificacion,.fav {
 
     text-align: center;
     justify-content: center;
     font-size: larger;   
-
 }
 .cali img {
+    height: 20px;
 
-    height: 90px;
 }
 
-a { 
-    text-decoration: none; color: #000;  
-  }
 
-.pelicula {
+ a { 
+    text-decoration: none; 
+    color: #000; 
+ }
+    
+     
+
+
+
+
+.serie {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -68,12 +74,14 @@ a {
     align-items: center;
     
     
+    
 
      
 }
-.imatilda {
+.igilmore {
     width: 850px;
     height: 450px;
+    justify-content: center;
     
 }
 
@@ -100,7 +108,7 @@ a {
 }
 
 
-.matilda { 
+.gilmore { 
     
     text-align: center;
     width: 100%;
@@ -151,6 +159,7 @@ a {
     border-radius: 15px 15px 15px 15px;
 }
 .texto {
+
     border-radius: 15px 15px 15px 15px;
     display: flex;
     align-items: center;
@@ -158,8 +167,8 @@ a {
     background-color: #c6c6c6;
     height: 200px;
 }
-
 .texto p {
     margin-right: 15 px;
     margin-left: 15px;
+
 }
