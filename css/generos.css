@@ -26,11 +26,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: xx-large;
 }
 
 .ulpeliculas {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -40,9 +42,10 @@
     align-items: center;
     background-color: #4a4fa2;
     height: 40px;
-    width: 100%;
-    font-size: large;
+    width: 50%;
+    font-size: x-large;
     margin-bottom: 10px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .comediapelis {
@@ -51,9 +54,10 @@
     align-items: center;
     background-color: #4a4fa2;
     height: 40px;
-    width: 100%;
-    font-size: large;
+    width: 50%;
+    font-size: x-large;
     margin-bottom: 10px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .musicalpelis {
@@ -62,9 +66,10 @@
     align-items: center;
     background-color: #4a4fa2;
     height: 40px;
-    width: 100%;
-    font-size: large;
+    width: 50%;
+    font-size: x-large;
     margin-bottom: 10px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .cienciafpelis {
@@ -74,20 +79,23 @@
     align-items: center;
     background-color: #4a4fa2;
     height: 40px;
-    width: 100%;
-    font-size: large;
+    width: 50%;
+    font-size: x-large;
     margin-bottom: 10px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .titulogseries {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: xx-large;
 }
 
 .ulseries {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -97,9 +105,10 @@
     align-items: center;
     background-color: #4a4fa2;
     height: 40px;
-    width: 100%;
-    font-size: large;
+    width: 50%;
+    font-size: x-large;
     margin-bottom: 10px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .musicalserie {
@@ -108,9 +117,10 @@
     align-items: center;
     background-color: #4a4fa2;
     height: 40px;
-    width: 100%;
-    font-size: large;
+    width: 50%;
+    font-size: x-large;
     margin-bottom: 10px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .cienciafserie {
@@ -120,7 +130,8 @@
     align-items: center;
     background-color: #4a4fa2;
     height: 40px;
-    width: 100%;
-    font-size: large;
+    width: 50%;
+    font-size: x-large;
     margin-bottom: 10px;
+    border-radius: 15px 15px 15px 15px;
 }

@@ -42,17 +42,22 @@ main {
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
+
    
 }
 
 .peliculamasacre {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-radius: 15px 15px 15px 15px;
-   height: auto;
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px; 
+
+
 }
 
 .fotomasacre {
@@ -64,20 +69,20 @@ main {
 }
 
 .titulomasacre {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
 }
 
 .ouija {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-color: #882b8d;
    border-width: 10px;
-   height: auto;
+   height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px; 
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fotoouija {
@@ -88,38 +93,45 @@ main {
 }
 
 .tituloouija {
-   margin: 0;
    text-align: center;
+   margin: 0%;
+   margin-top: 2%;
 }
 
 .misterioalavista {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-radius: 15px 15px 15px 15px; 
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fotomisterioalavista {
    height: 112px;
    width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
+   margin: 0%;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .titulomisterioalavista {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
 }
 
 .peliculatiempo {
    display: flex;
    flex-direction: column;
-   flex-wrap: wrap;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-radius: 15px 15px 15px 15px; 
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fototiempo {
@@ -130,16 +142,20 @@ main {
 }
 
 .titulotiempo {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
 }
 
 .peliculaannie {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-radius: 15px 15px 15px 15px; 
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fotoannie {
@@ -150,7 +166,8 @@ main {
 }
 
 .tituloannie {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
 }
 
 .lomasvistoserie {
@@ -168,11 +185,13 @@ main {
 .theoffice {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   background-color: #4a4fa3;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px; 
+   background-color: #4a4fa2;
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fototheoffice {
@@ -183,18 +202,20 @@ main {
 }
 
 .titulotheoffice {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
 }
 
 .gilmoregirls {
    display: flex;
    flex-direction: column;
-   flex-wrap: wrap;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   background-color: #4a4fa3;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px; 
+   background-color: #4a4fa2;
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fotogilmoregirls {
@@ -204,20 +225,21 @@ main {
    border-radius: 15px 15px 15px 15px; 
 }
 
-.titulogilmoregirls {
-   margin: 0;
-   
+.titulosgilmoregirls {
+   margin: 0%;
+   margin-top: 6%;
 }
 
 .go {
    display: flex;
    flex-direction: column;
-   flex-wrap: wrap;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   background-color: #4a4fa3;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px; 
+   background-color: #4a4fa2;
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fotogo {
@@ -228,18 +250,21 @@ main {
 }
 
 .titulogo {
-   margin: 0;
+   margin: 0%;
+   margin-top: 2%;
    text-align: center;
 }
 
 .los100 {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   background-color: #4a4fa3;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px; 
+   background-color: #4a4fa2;
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fotolos100 {
@@ -250,16 +275,19 @@ main {
 }
 
 .titulolos100 {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
 }
 
 .blackmirror {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   background-color: #4a4fa3;
-   border-color: #882b8d;
+   background-color: #4a4fa2;
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
    border-radius: 15px 15px 15px 15px; 
 }
 
@@ -271,7 +299,8 @@ main {
 }
 
 .tituloblackmirror {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
 }
 
 .peliculasmasvaloradas {
@@ -289,13 +318,13 @@ main {
 .lapurga {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   height: auto;
-   width: 200px;
    background-color: #4a4fa2;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px; 
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fotoslapurga {
@@ -306,18 +335,21 @@ main {
 }
 
 .titulolapurga {
-   margin: 0;
+   margin: 0%;
+   margin-top: 2%;
    text-align: center;
 }
 
 .sing {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px; 
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fotosing {
@@ -328,18 +360,21 @@ main {
 }
 
 .titulosing {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
    text-align: center;
 }
 
 .matilda {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px; 
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fotomatilda {
@@ -350,20 +385,21 @@ main {
 }
 
 .titulomatilda {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
    text-align: center;
 }
 
 .terminator {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   height: auto;
-   width: 200px;
    background-color: #4a4fa2;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px; 
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fototerminator {
@@ -374,18 +410,21 @@ main {
 }
 
 .tituloterminator {
-   margin: 0;
+   margin: 0%;
+   margin-top: 2%;
    text-align: center;
 }
 
 .transformer {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-color: #882b8d;
-   border-radius: 15px 15px 15px 15px; 
+   border-width: 10px;
+   height: 200px;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px;
 }
 
 .fototransformer {
@@ -396,6 +435,7 @@ main {
 }
 
 .titulotransformer {
-   margin: 0;
+   margin: 0%;
+   margin-top: 8%;
    text-align: center;
 } 
