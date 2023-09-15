@@ -2,6 +2,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-color:#4a4fa2 ;
-  color: #c6c6c6;
+  background-color: #c6c6c6;
+  margin-left: 2%;
+}
+
+.textofooter {
+  color: #4a4fa2;
+  font-size: larger;
 }
