@@ -6,95 +6,98 @@ body {
     background-color: black; 
      } 
    
-
      .resultados {
         text-align: center;
         color: #c6c6c6;
         margin: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 15px 15px 15px 15px; 
+        
     }
-    
-    .resultados h1 {
-        font-size: 34px;
-        color: #c6c6c6;
-        align-items: center;
-
-    }
-    
+     
     .lista-resultados {
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         padding: 0;
-        list-style: none;
         background-color: #4a4fa2;
+        height: 300px;
+        width: 100%;
+        border-radius: 15px 15px 15px 15px; 
 
     }
+
+ 
+    .favs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: darkgrey;
+        width: 80%;
+        border-radius: 0px 15px 15px 15px; 
+        border: #c6c6c6 solid 5px;
+        margin: 5px;
+        font-size: 20px; 
+        height: 50px; 
+        margin-right: 2%;
+        
     
-
-.lista-resultados div {
-    background-color: #4a4fa2;
-    margin: 0;
-    padding: 15px;
-    width: 400px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    border-radius: 15px 15px 15px 15px; 
-}
-
-.lista-resultados div img {
-    margin: 0 ;
-}
-
-    .lista-resultados div h2 {
-        font-size: 24px;
-        color: #c6c6c6;
-
-    }
-    
-    .imagenmat {
-    display: block;
-    width: 400px; 
-    max-width: 100%;
-    padding: 10px; 
-    height: auto; 
-    margin: 0;
-    border-radius: 15px 15px 15px 15px; 
-
-    }
-    
-    .lista-resultados h2 {
-        font-size: 36px;
-        margin: 10px 0;
-        color: #4a4fa2;
     }
 
+.imagenmat {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 400px; 
+max-width: 100%; 
+height: auto; 
+margin: 0;
+border-radius: 15px 15px 15px 15px;
+margin-left: 4%; 
     
-    
-.resultados div article {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: darkgrey;
-    border-radius: 0px 15px 15px 15px; 
-    margin: 5px;
-    font-size: 20px; 
-    height: 50px; 
-    border: #c6c6c6 solid 5px;
+        }
 
-}
+.artimagen {
+display: flex;
+flex-direction: column;
+justify-content: center;
+        }
 
 .informacion { 
-    align-items: center;
-    display: flex;
-    justify-content: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: 2%;
+        
+        }
+
+.titulopeli {
+font-size: 20px;
+color: #c6c6c6;
 
 }
 
-.informacion h2 {
-    color: black;
+@media (max-width: 550px) {
+.lista-resultados {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.imagenmat {
+    width: 360px;
+    margin-top: 10%;
+}
+
+.artimagen {
+margin-right: 4%;
+justify-content: center;
+align-items: center;
+}
+.informacion {
+margin-top: 5%;
+margin-bottom: -100px;
+}
 }
