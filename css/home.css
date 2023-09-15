@@ -42,6 +42,7 @@ main {
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
+   margin-top: 5%;
 
    
 }
@@ -52,10 +53,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
    border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 
 
 }
@@ -79,10 +81,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotoouija {
@@ -96,6 +99,7 @@ main {
    text-align: center;
    margin: 0%;
    margin-top: 2%;
+   margin-left: 2%;
 }
 
 .misterioalavista {
@@ -104,10 +108,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotomisterioalavista {
@@ -128,10 +133,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fototiempo {
@@ -152,10 +158,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotoannie {
@@ -178,8 +185,10 @@ main {
 .carrusel2 {
    display: flex;
    flex-direction: row;
-   justify-content: space-evenly;
+   flex-wrap: wrap;
+   justify-content: space-around;
    align-items: center;
+   margin-top: 5%;
 }
 
 .theoffice {
@@ -188,10 +197,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fototheoffice {
@@ -212,10 +222,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotogilmoregirls {
@@ -236,10 +247,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotogo {
@@ -261,10 +273,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotolos100 {
@@ -285,10 +298,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
    border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotoblackmirror {
@@ -311,8 +325,10 @@ main {
 .carrusel3 {
    display: flex;
    flex-direction: row;
-   justify-content: space-evenly;
+   flex-wrap: wrap;
+   justify-content: space-around;
    align-items: center;
+   margin-top: 5%;
 }
 
 .lapurga {
@@ -321,10 +337,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotoslapurga {
@@ -346,10 +363,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotosing {
@@ -371,10 +389,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fotomatilda {
@@ -386,8 +405,9 @@ main {
 
 .titulomatilda {
    margin: 0%;
-   margin-top: 8%;
+   margin-top: 2%;
    text-align: center;
+   margin-left: 2%;
 }
 
 .terminator {
@@ -396,10 +416,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fototerminator {
@@ -421,10 +442,11 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   border-width: 10px;
    height: 200px;
    width: 200px;
-   border-radius: 15px 15px 15px 15px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 5%;
+   margin-left: 2%;
 }
 
 .fototransformer {
