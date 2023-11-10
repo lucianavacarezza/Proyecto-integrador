@@ -47,7 +47,7 @@ main {
    
 }
 
-.peliculamasacre {
+.pelicula {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
@@ -62,7 +62,7 @@ main {
 
 }
 
-.fotomasacre {
+.imagen_pelis{
    height: 112px;
    width: 200px;
    margin: 0; 
@@ -75,107 +75,6 @@ main {
    margin-top: 8%;
 }
 
-.ouija {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fotoouija {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.tituloouija {
-   text-align: center;
-   margin: 0%;
-   margin-top: 2%;
-   margin-left: 2%;
-}
-
-.misterioalavista {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fotomisterioalavista {
-   height: 112px;
-   width: 200px;
-   margin: 0%;
-   border-radius: 15px 15px 15px 15px;
-}
-
-.titulomisterioalavista {
-   margin: 0%;
-   margin-top: 8%;
-}
-
-.peliculatiempo {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fototiempo {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.titulotiempo {
-   margin: 0%;
-   margin-top: 8%;
-}
-
-.peliculaannie {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fotoannie {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.tituloannie {
-   margin: 0%;
-   margin-top: 8%;
-}
 
 .lomasvistoserie {
    color:  #c6c6c6;
