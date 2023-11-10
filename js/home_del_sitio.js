@@ -2,7 +2,7 @@ let container =document.querySelector (".carrusel1")
 let contador = 0
 
 let apiKey = 'f5ffd30de9f03f8a95e76344c36e6cc3'
-fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`)
+fetch (`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
 
 .then(function (response){
     return response.json()
@@ -28,7 +28,7 @@ fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`)
 let container2 =document.querySelector (".carrusel2")
 let contador2 = 0
 
-fetch (`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}`)
+fetch (`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
 
 .then(function (response){
     return response.json()
