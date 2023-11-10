@@ -31,6 +31,7 @@ a {
     margin-left: 10px;
     color: #c6c6c6;
     width: 300px;
+
     }
 
 .annie-div {
@@ -52,6 +53,7 @@ a {
     margin-left: 10px;
     color: #c6c6c6;
     width: 300px;
+    
     }
 
 .go-div {
@@ -106,6 +108,7 @@ width: 300px;
     width: 320px;
     margin: 0;
     border-radius: 15px 15px 15px 15px;
+    margin-left: 5%;
 
     }
 
@@ -114,6 +117,7 @@ width: 300px;
     width: 320px;
     margin: 0;
     border-radius: 15px 15px 15px 15px;
+    margin-left: 5%;
         }
 
 .sing-ft {
@@ -121,12 +125,14 @@ width: 300px;
     width: 320px;
     margin: 0;
     border-radius: 15px 15px 15px 15px;
+    margin-left: 5%;
         }
 .matilda-ft {
     height: 180px;
     width: 320px;
     margin: 0;
     border-radius: 15px 15px 15px 15px;
+    margin-left: 5%;
                 }
     
 .titulo-annie {
@@ -134,11 +140,16 @@ width: 300px;
     font-size: xx-large;
     }
 .titulo-go {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 0;
+    margin-left: 20%;
     font-size: xx-large;
         }
 .titulo-sing {
     margin-bottom: 0;
+    margin-left: 5%;
     font-size: xx-large;
         }
 .titulo-matilda {
@@ -152,4 +163,49 @@ color: white;
 color: #c6c6c6;
 font-size: xx-large;
 text-align: center;
+}
+
+@media (max-width: 550px) {
+    .annie-ft {
+        height: 90px;
+        width: 160px;
+        margin: 0;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: 5%;  
+   }
+    
+    .go-ft {
+        height: 90px;
+        width: 160px;
+        margin: 0;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: 5%;
+   }
+    
+    .sing-ft {
+        height: 90px;
+        width: 160px;
+        margin: 0;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: 5%;
+   }
+    .matilda-ft {
+        height: 90px;
+        width: 160px;
+        margin: 0;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: 5%;
+   }
+   .titulo-annie {
+    margin-left: 5%;
+    }
+.titulo-go {
+    margin-left: 5%;
+        }
+.titulo-sing {
+    margin-left: 5%;
+        }
+.titulo-matilda {
+    margin-left: 5%;
+        }
 }
