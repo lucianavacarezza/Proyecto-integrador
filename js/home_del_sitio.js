@@ -12,7 +12,7 @@ fetch (`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
     for(let i=0; i<5 ; i++){
         container.innerHTML += `
         <article class="pelicula">
-                <a href="./detalle_peli.html"><img class="imagen_pelis" src= ${data.results[i].backdrop_path}></a>
+                <a href="./detalle_peli.html"><img class="imagen_pelis" src= https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}></a>
                 <h2 class="titulos_pelis"><a class="link" href="./detalle_peli.html">${data.results[i].title}</a></h2>
                 <a class="link" href="./detalle_peli.html">${data.results[i].release_date}</a>
         </article>
@@ -38,14 +38,9 @@ fetch (`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
     for(let i=0; i<5 ; i++){
         container2.innerHTML += `
         <article class="theoffice">
-                <a href="./detalle_series.html"><img class="fototheoffice" src="./imgs/the_office.webp" alt=""></a>
-                <h2 class="titulotheoffice"><a class="link" href="./detalle_series.html">The office</a></h2>
-                <a class="link" href="./detalle_series.html">24 de marzo de 2005</a>
-        </article>
-        <article>
-        <img src= ${data.results[i].image} />
-        <h2> ${data.results[i].name} </h2>
-        <h3> ${data.results[i].status} </h3>
+                <a href="./detalle_series.html"><img class="imagen_serie" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
+                <h2 class="titulo_serie"><a class="link" href="./detalle_series.html">${data.results[i].name}</a></h2>
+                <a class="link" href="./detalle_series.html">${data.results[i].first_air_date}</a>
         </article>
         `
     }
@@ -56,4 +51,26 @@ fetch (`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
     console.log(error)
 })
 
+let container3 =document.querySelector (".carrusel3")
+fetch (`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
 
+.then(function (response){
+    return response.json()
+})
+.then (function(data) {
+    console.log(data)
+    for(let i=0; i<5 ; i++){
+        container3.innerHTML += `
+        <article class="theoffice">
+                <a href="./detalle_series.html"><img class="imagen_serie" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
+                <h2 class="titulo_serie"><a class="link" href="./detalle_series.html">${data.results[i].name}</a></h2>
+                <a class="link" href="./detalle_series.html">${data.results[i].first_air_date}</a>
+        </article>
+        `
+    }
+    contador3 += 1
+})
+
+.catch(function(error){
+    console.log(error)
+})
