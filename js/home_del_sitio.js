@@ -9,7 +9,7 @@ fetch (`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
 })
 .then (function(data) {
     console.log(data)
-    for(let i=0; i<5 ; i++){
+    for(let i=0; i<5; i++){
         container.innerHTML += `
         <article class="pelicula">
                 <a href="./detalle_peli.html"><img class="imagen_pelis" src= https://image.tmdb.org/t/p/w185/${data.results[i].poster_path}></a>
