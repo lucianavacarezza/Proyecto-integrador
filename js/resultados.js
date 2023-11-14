@@ -13,12 +13,17 @@ fetch(link_busquedas)
 })
 .then(function(data){
     console.log(data)
-    if (data.length== 0) {
-        document.querySelector(".titulo").innerText=`
-        <h1>No se encuentran resultados para su busqueda</h1> `
+    if (data.results.length == 0 ) {
+
+    document.querySelector(".resultados").style.display="none"
+    document.querySelector(".sinresultados").style.display="show" 
+    document.querySelector(".sinresultados").innerText= `No se encontraron resultados para la busqueda ${valor}`
+
         
+    } else{
+        document.querySelector(".titulo").innerText= ` Resultados para: ${valor} `
+        document.querySelector(".sinresultados")
     }
-    document.querySelector(".titulo").innerText= ` Hola `
     
 })
 .catch(function(error){
