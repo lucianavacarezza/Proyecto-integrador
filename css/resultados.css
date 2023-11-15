@@ -5,109 +5,54 @@ a {
 body {
     background-color: black; 
      } 
-   
-     .resultados {
-        text-align: center;
-        color: #c6c6c6;
-        margin: 20px;
-        
-    }
-     
-    .lista-resultados {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0;
-        background-color: #4a4fa2;
-        height: 300px;
-        width: 100%;
-        border-radius: 15px 15px 15px 15px; 
 
-    }
+
+.resultados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+ 
+    
+ }
+ 
+ .parecidobusqueda {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #4a4fa2;
+    height: 350px;
+    width: 200px;
+    border-radius: 15px 15px 15px 15px; 
+    margin-bottom: 5%;
+    margin-left: 2%;
+ 
+ 
+ }
+ .imagen_resultados {
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    border-radius: 15px 15px 15px 15px;
+}
+.tituloparecido{
+    justify-content: center;
+}
+.link {
+    justify-content: center;
+    text-decoration: none;
+    color: #c6c6c6;
+    margin-bottom: 10px;
+}
 
     .sinresultados {
         display: flex;
-        display: block;
         justify-content: center;
         font-size: 25px;
-        color: white;
+        color: #c6c6c6;
         height: 600px;
 
     }
-
- 
-    .favs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        background-color: darkgrey;
-        width: 80%;
-        border-radius: 0px 15px 15px 15px; 
-        border: #c6c6c6 solid 5px;
-        margin: 5px;
-        font-size: 20px; 
-        height: 50px; 
-        margin-right: 2%;
-        
-    
-    }
-
-.imagenmat {
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 400px; 
-max-width: 100%; 
-height: auto; 
-margin: 0;
-border-radius: 15px 15px 15px 15px;
-margin-left: 4%; 
-    
-        }
-
-.artimagen {
-display: flex;
-flex-direction: column;
-justify-content: center;
-        }
-
-.informacion { 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-left: 2%;
-        
-        }
-
-.titulopeli {
-font-size: 20px;
-color: #c6c6c6;
-
-}
-
-@media (max-width: 550px) {
-.lista-resultados {
-    flex-direction: column;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.imagenmat {
-    width: 360px;
-    margin-top: 10%;
-}
-
-.artimagen {
-margin-right: 4%;
-justify-content: center;
-align-items: center;
-}
-.informacion {
-margin-top: 5%;
-margin-bottom: -100px;
-}
-}
