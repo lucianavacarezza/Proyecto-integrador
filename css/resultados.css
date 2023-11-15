@@ -25,6 +25,16 @@ body {
 
     }
 
+    .sinresultados {
+        display: flex;
+        display: block;
+        justify-content: center;
+        font-size: 25px;
+        color: white;
+        height: 600px;
+
+    }
+
  
     .favs {
         display: flex;
