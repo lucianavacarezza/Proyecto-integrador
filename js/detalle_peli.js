@@ -35,7 +35,7 @@ fetch (`https://api.themoviedb.org/3/movie/${movie_id}?api_key=${apiKey}`)
     <br>
 `
 
-    for(let i=0; i<data.genres.length; i++){
+    for(let i=0; i<[data.genres].length; i++){
       let generos = data.genres[i].name}
       
     contenedor2.innerHTML += `
