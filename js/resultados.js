@@ -36,6 +36,7 @@ fetch(link_busquedas) //accedo con el valor a los resultados parecidos a la busq
         
         for(let i=0; i<10 ; i++){
             
+            
             document.querySelector(".resultados").innerHTML += `
             <article class="parecidobusqueda">
                     <a href="./detalle_series.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
