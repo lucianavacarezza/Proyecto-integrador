@@ -35,14 +35,15 @@ fetch(link_busquedas) //accedo con el valor a los resultados parecidos a la busq
 
         
         for(let i=0; i<10 ; i++){
+            
             document.querySelector(".resultados").innerHTML += `
             <article class="parecidobusqueda">
                     <a href="./detalle_series.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
-                    <h2 class="tituloparecido"><a class="link" href="./detalle_series.html">${data.results[i].title}</a></h2>
+                    <h2 class="tituloparecido"><a class="link" href="./detalle_series.html">${data.results[i].title}</a></h2> 
                     <a class="link" href="./detalle_series.html">${data.results[i].release_date}</a>
             </article>
             `
-        }
+        } //ver el link de detalle porque está para series pero puede ser película.
         contador += 1
         
 
