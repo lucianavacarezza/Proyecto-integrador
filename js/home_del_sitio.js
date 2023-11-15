@@ -10,13 +10,24 @@ fetch (`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
 .then (function(data) {
     console.log(data)
     for(let i=0; i<5; i++){
+        let url = `./detalle_peli.html?id=${data.results[i].id}`
         container.innerHTML += `
-        <article class="pelicula">
-                <a href="./detalle_peli.html"><img class="imagen_pelis" src= https://image.tmdb.org/t/p/w185/${data.results[i].poster_path}></a>
-                <h2 class="titulos_pelis"><a class="link" href="./detalle_peli.html">${data.results[i].title}</a></h2>
-                <a class="link" href="./detalle_peli.html">${data.results[i].release_date}</a>
+        <a href="${url}">
+        <article class="pelicula" >
+                
+                <img class="imagen_pelis" src= https://image.tmdb.org/t/p/w185/${data.results[i].poster_path}>
+                <h2 class="titulos_pelis link">${data.results[i].title}</h2>
+                <p class = "link">${data.results[i].release_date}</p>
+                
         </article>
+        </a>
         `
+        //<article class="pelicula" >
+               // <a href="${url}"><img class="imagen_pelis" src= https://image.tmdb.org/t/p/w185/${data.results[i].poster_path}></a>
+                //<h2 class="titulos_pelis"><a class="link" href="${url}">${data.results[i].title}</a></h2>
+                //<a class="link" href="${url}">${data.results[i].release_date}</a>
+        //</article>
+        //`
     }
     contador += 1
 })
