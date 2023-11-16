@@ -63,7 +63,7 @@ fetch (api)
             <ul class="generico">
                 <li> <h4>Duración: ${resultados.runtime}  min</h4></li>
                 <li><h4>Estreno: ${resultados.release_date}  </h4></li>
-                <li> <h4> <a href="./detalle_genero.html">Genero:  </a></h4></li>                  
+                <li> <h4> <a href="./detalle_genero.html">Genero:  </a></h4></li>
             </ul>
                 
         </div>

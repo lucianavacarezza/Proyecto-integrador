@@ -4,7 +4,7 @@ let contenedor2 = document.querySelector(".otra_mitad")
 
 let queryDetalle = location.search;
 let queryStringDetalle = new URLSearchParams(queryDetalle)
-let movie_id = queryStringDetalle.get("id")
+let series_id = queryStringDetalle.get("id")
 // HAY QUE VER SI SE PUEDE SACAR
 
 let api = `https://api.themoviedb.org/3/tv/${series_id}?api_key=${apiKey}`
@@ -24,7 +24,7 @@ fetch (api)
             <h4 class="calificacion">Calificación:</h4>
                 <img src="./imgs/Black-5-Star-Rating-Transparent-PNG.png" alt="Imagen 5 estrellas">
         </article>
-        article><h4 class="fav"><a href="./favoritos.html"> Añadir a favoritos</a></h4></article>
+        <article><h4 class="fav"><a href="./favoritos.html"> Añadir a favoritos</a></h4></article>
                 
     </div>
            
@@ -53,27 +53,24 @@ fetch (api)
     // ver generos
     contenedor2.innerHTML += `
         <article class="titulo">
-                <h1 class="matilda"> ${resultados.original_title} <h1>
+             <h1 class="gilmore">${resultados.name}<h1>
         </article>
 
         <div class="detalles">
             <ul class="generico">
-                <li> <h4>Duración: ${resultados.runtime}  min</h4></li>
-                <li><h4>Estreno: ${resultados.release_date}  </h4></li>
-                <li> <h4> <a href="./detalle_genero.html">Genero:  </a></h4></li>                  
+            <li><h4>Estreno: ${resultados.first_air_date}</h4></li>
+            <li> <h4> <a href="./detalle_genero.html">Genero: </a></h4></li>                  
             </ul>
-                
-        </div>
     
+        </div>
+
         <article class="sinopsis">
-            <h3 class="resumen"> Sinopsis:  </h3>
+            <h3 class="resumen">    Sinopsis: </h3>
         </article>
-    
         <article class="texto">
-            <p> ${resultados.overview} </p>
+            <p> ${resultados.overview}</p>
         </article>
-                
-        </div>
+
     `
     })
 
