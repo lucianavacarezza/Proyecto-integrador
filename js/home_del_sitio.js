@@ -48,11 +48,13 @@ fetch (`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
     console.log(data)
     for(let i=0; i<5 ; i++){
         container2.innerHTML += `
+        <a>
         <article class="serie">
                 <a href="./detalle_series.html"><img class="imagen_serie" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
                 <h2 class="titulo_serie"><a class="link" href="./detalle_series.html">${data.results[i].name}</a></h2>
                 <a class="link" href="./detalle_series.html">${data.results[i].first_air_date}</a>
         </article>
+        </a>
         `
     }
     contador2 += 1
@@ -73,11 +75,13 @@ fetch (`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
     console.log(data)
     for(let i=0; i<5 ; i++){
         container3.innerHTML += `
+<a>
         <article class="pelicula">
-                <a href="./detalle_peli.html"><img class="imagen_peli" src= https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}></a>
+                <a href="./detalle_peli.html"><img class="imagen_pelis" src= https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}></a>
                 <h2 class="titulos_pelis"><a class="link" href="./detalle_peli.html">${data.results[i].title}</a></h2>
                 <a class="link" href="./detalle_peli.html">${data.results[i].release_date}</a>
         </article>
+        </a>
         `
     }
     contador3 += 1
