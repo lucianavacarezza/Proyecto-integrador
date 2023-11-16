@@ -9,4 +9,9 @@ footer {
 .textofooter {
   color: #4a4fa2;
   font-size: larger;
+  margin-bottom: 3%;
+}
+
+.imagenlogo {
+  margin-right: 5%;
 }
