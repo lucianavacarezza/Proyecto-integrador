@@ -83,7 +83,7 @@ fetch (`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
         let url3 = `./detalle_peli.html?id=${data.results[i].id};`
         container3.innerHTML += `
         <article class="pelicula">
-                <a href="${url3}"><img class="imagen_peli" src= https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}></a>
+                <a href="${url3}"><img class="imagen_pelis" src= https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}></a>
                 <h2 class="titulos_pelis"><a class="link" href="${url3}">${data.results[i].title}</a></h2>
                 <a class="link" href="${url3}">${data.results[i].release_date}</a>
         </article>

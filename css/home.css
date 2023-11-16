@@ -25,7 +25,6 @@ li {
 a {
    text-decoration: none;
    color: #000;
-   
 
 }
 
@@ -98,7 +97,6 @@ main {
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
-   margin-top: 5%;
 }
 
 .serie {
@@ -107,10 +105,10 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   height: 370px;
+   height: 400.5x;
    width: 200px;
    border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
+   margin-bottom: 10%;
    margin-left: 2%;
 }
 
@@ -135,12 +133,14 @@ main {
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
-   margin-top: 5%;
 
    
 }
 .peliculasmasvaloradas {
-   color:  #c6c6c6;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   color: #c6c6c6;
    font-size: xx-large;
    margin-left: 3%;
 }
