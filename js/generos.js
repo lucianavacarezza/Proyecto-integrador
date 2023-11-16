@@ -9,8 +9,9 @@ fetch (` https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`)
     console.log(data)
 
     for (let i = 0; i < data.genres.length ; i++) {
+      let genero =  data.genres[i]
       lista.innerHTML += `
-      <li class="terror"> <a class="link"  href="./detalle_genero.html"> ${data.genres[i].name}</a></li>
+      <li class="terror"> <a class="link"  href="./detalle_genero.html?idGenero=${genero.id}&name=${genero.name}"> ${data.genres[i].name}</a></li>
       `
     }
   })

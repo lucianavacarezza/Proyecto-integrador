@@ -5,165 +5,85 @@ li {
 body {
 background-color: black;    
  } 
-ul, ol {
-   padding: 0; /* relleno */
- }
-li {
-   list-style-type: none; /* viñetas*/
-}
-
 a { 
   text-decoration: none; color: #000;  /* text-decoration es negrita, cursiva y lo otro el color */
 }
+#contenedorSeries{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+#contenedorPelis{
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+
+}
+#tituloGenero {
+    justify-content: center;
+    color: #c6c6c6;
+    font-size: xx-large;
+    text-align: center;
+}
+#tituloSecundario {
+    justify-content: flex-start;
+    color: #c6c6c6;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.mismoGenero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #4a4fa2;
+    height: 350px;
+    width: 200px;
+    border-radius: 15px 15px 15px 15px; 
+    margin-bottom: 5%;
+    margin-left: 2%;
+ 
+ }
+
+ .imagen_generos {
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    border-radius: 15px 15px 15px 15px;
+}
 .link {
-    color: #c6c6c6;
-}
-.h3-todos {
-    text-decoration:none;
-}
-.annie-peli {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-left: 10px;
+    text-decoration: none;
     color: #c6c6c6;
-    width: 300px;
-
-    }
-
-.annie-div {
-    display: flex;
-    flex-direction: row;
-    background-color: #4a4fa2;
-    justify-content: space-around;
-    height: 220px;
-    align-items: center;
+    margin-bottom: 10px;
 }
 
-
-.go-peli {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    color: #c6c6c6;
-    width: 300px;
-    
-    }
-
-.go-div {
-        display: flex;
-        flex-direction: row;
-        background-color: #4a4fa2;
-        justify-content: space-around;
-        height: 220px;
-        align-items: center;
-    }
-    
-.sing-peli {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-margin-left: 10px;
-color: #c6c6c6;
-width: 300px;
-}
-
-.sing-div {
-    display: flex;
-    flex-direction: row;
-    background-color: #4a4fa2;
-    justify-content: space-around;
-    height: 220px;
-    align-items: center;
-}
-.matilda-peli {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    color: #c6c6c6;
-    width: 300px;
-    }
-    .matilda-div {
-        display: flex;
-        flex-direction: row;
-        background-color: #4a4fa2;
-        justify-content: space-around;
-        height: 220px;
-        align-items: center;
-    }
-
-.annie-ft {
-    height: 180px;
-    width: 320px;
-    margin: 0;
-    border-radius: 15px 15px 15px 15px;
-    margin-left: 5%;
+    .noExiste {
+        
+        justify-content: center;
+        font-size: 25px;
+        color: #c6c6c6;
+        height: 600px;
 
     }
 
-.go-ft {
-    height: 180px;
-    width: 320px;
-    margin: 0;
-    border-radius: 15px 15px 15px 15px;
-    margin-left: 5%;
-        }
 
-.sing-ft {
-    height: 180px;
-    width: 320px;
-    margin: 0;
-    border-radius: 15px 15px 15px 15px;
-    margin-left: 5%;
-        }
-.matilda-ft {
-    height: 180px;
-    width: 320px;
-    margin: 0;
-    border-radius: 15px 15px 15px 15px;
-    margin-left: 5%;
-                }
-    
-.titulo-annie {
-    margin-bottom: 0;
-    font-size: xx-large;
-    }
-.titulo-go {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 0;
-    margin-left: 20%;
-    font-size: xx-large;
-        }
-.titulo-sing {
-    margin-bottom: 0;
-    margin-left: 5%;
-    font-size: xx-large;
-        }
-.titulo-matilda {
-    margin-bottom: 0;
-    font-size: xx-large;
-        }
-.genero-total {
-color: white;
-}
-.titulo-genero {
-color: #c6c6c6;
-font-size: xx-large;
-text-align: center;
-}
+
+
+
+
+
+
+
+
 
 @media (max-width: 550px) {
     .annie-ft {
