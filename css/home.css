@@ -48,7 +48,7 @@ footer {
    width: 100%;
    margin-left: 5%;
    text-align: center;
-   margin-bottom: 5%;
+   margin-bottom: 4%;
 
 }
 .imagenlogo {
@@ -60,6 +60,7 @@ footer {
    align-items: flex-start;
    color: #c6c6c6;
    font-size: xx-large;
+   margin-left: 3%;
 }
 
 .carrusel1 {
@@ -68,7 +69,7 @@ footer {
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
-   margin-top: 5%;
+   
 
    
 }
@@ -82,7 +83,7 @@ footer {
    height: 400.5x;
    width: 200px;
    border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 20%;
+   margin-bottom: 10%;
    margin-left: 2%;
 
 
@@ -108,6 +109,7 @@ footer {
 .lomasvistoserie {
    color:  #c6c6c6;
    font-size: xx-large;
+   margin-left: 3%;
 }
 
 .carrusel2 {
@@ -128,7 +130,7 @@ footer {
    height: 370px;
    width: 200px;
    border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 10%;
+   margin-bottom: 5%;
    margin-left: 2%;
 }
 
@@ -147,3 +149,18 @@ footer {
    margin-top: 8%   
 }
 
+.carrusel3 {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 5%;
+
+   
+}
+.peliculasmasvaloradas {
+   color:  #c6c6c6;
+   font-size: xx-large;
+   margin-left: 3%;
+}
