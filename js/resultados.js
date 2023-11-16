@@ -34,7 +34,8 @@ fetch(link_busquedas) //accedo con el valor a los resultados parecidos a la busq
         document.querySelector(".sinresultados").style.display= "none"// oculto la secc sin resultados 
 
         
-        for(let i=0; i<10 ; i++){
+        
+        for(let i=0; i<6 ; i++){
             
             
             document.querySelector(".resultados").innerHTML += `
