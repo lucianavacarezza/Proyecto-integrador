@@ -86,3 +86,4 @@ fetch (`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
 .catch(function(error){
     console.log(error)
 })
+
