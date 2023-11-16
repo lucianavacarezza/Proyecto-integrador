@@ -1,12 +1,23 @@
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: flex-end;
+  width: 100%;
   background-color: #c6c6c6;
-  margin-left: 2%;
+  
 }
-
 .textofooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-left: 5%;
+  text-align: center;
+  margin-bottom: 4%;
   color: #4a4fa2;
   font-size: larger;
+
+}
+.imagenlogo {
+  margin-right: 5%;
 }

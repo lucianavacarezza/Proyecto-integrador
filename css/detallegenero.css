@@ -2,12 +2,15 @@
 li { 
     list-style-type: none;
 }
+
 body {
 background-color: black;    
  } 
+
 a { 
   text-decoration: none; color: #000;  /* text-decoration es negrita, cursiva y lo otro el color */
 }
+
 #contenedorSeries{
     display: flex;
     flex-direction: row;
