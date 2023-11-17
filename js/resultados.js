@@ -37,23 +37,25 @@ fetch(link_busquedas) //accedo con el valor a los resultados parecidos a la busq
         
         for(let i=0; i<6 ; i++){
             if(data.results[i].media_type == "tv"){
+
+                let url2 = `./detalle_series.html?id=${data.results[i].id};`
                 document.querySelector(".resultados").innerHTML += `
                 <article class="parecidobusqueda">
-                        <a href="./detalle_series.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt=""></a>
-                        <h2 class="tituloparecido"><a class="link" href="./detalle_series.html">${data.results[i].title}</a></h2> 
-                        <a class="link" href="./detalle_series.html">${data.results[i].release_date}</a>
+                        <a href=${url2}><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt=""></a>
+                        <h2 class="tituloparecido"><a class="link" href=${url2}>${data.results[i].title}</a></h2> 
+                        <a class="link" href= ${url2} >${data.results[i].release_date}</a>
                 </article>`
 
 
             }else if (data.results[i].media_type == "movie"){
-                
+                let url = `./detalle_peli.html?id=${data.results[i].id};`
                 document.querySelector(".resultados").innerHTML+=
 
                 `
                 <article class="parecidobusqueda">
-                        <a href="./detalle_peli.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt=""></a>
-                        <h2 class="tituloparecido"> <a class="link" href="./detalle_series.html">${data.results[i].title}</a></h2> 
-                        <a class= "link" href="./detalle_peli.html"> ${data.results[i].release_date}</a>
+                        <a href=${url}><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt=""></a>
+                        <h2 class="tituloparecido"> <a class="link" href=${url}>${data.results[i].title}</a></h2> 
+                        <a class= "link" href=${url}> ${data.results[i].release_date}</a>
                 </article>
                 `
 
