@@ -39,18 +39,19 @@ fetch(link_busquedas) //accedo con el valor a los resultados parecidos a la busq
             if(data.results[i].media_type == "tv"){
                 document.querySelector(".resultados").innerHTML += `
                 <article class="parecidobusqueda">
-                        <a href="./detalle_series.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w345/${data.results[i].poster_path}" alt=""></a>
+                        <a href="./detalle_series.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt=""></a>
                         <h2 class="tituloparecido"><a class="link" href="./detalle_series.html">${data.results[i].title}</a></h2> 
                         <a class="link" href="./detalle_series.html">${data.results[i].release_date}</a>
-                </article>
-                `
+                </article>`
+
 
             }else if (data.results[i].media_type == "movie"){
+                
                 document.querySelector(".resultados").innerHTML+=
 
                 `
                 <article class="parecidobusqueda">
-                        <a href="./detalle_peli.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w345/${data.results[i].poster_path}" alt=""></a>
+                        <a href="./detalle_peli.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt=""></a>
                         <h2 class="tituloparecido"> <a class="link" href="./detalle_series.html">${data.results[i].title}</a></h2> 
                         <a class= "link" href="./detalle_peli.html"> ${data.results[i].release_date}</a>
                 </article>
@@ -60,7 +61,7 @@ fetch(link_busquedas) //accedo con el valor a los resultados parecidos a la busq
             }
             
             
-        } //ver el link de detalle porque está para series pero puede ser película.
+        } 
         contador += 1
         
 
