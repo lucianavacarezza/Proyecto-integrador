@@ -55,7 +55,7 @@ fetch (api)
     for (i=0; i< resultados.genres.length; i++){
         generosLista +=
         `
-        <li><p> <a href = './detalle_genero.html' > ${resultados.genres[i].name} </a> </p></li> 
+        <li ><p> <a class= "generoIndividual" href = './detalle_genero.html' > ${resultados.genres[i].name} </a> </p></li> 
         ` //sigue sin andar genero
     }
 
@@ -68,9 +68,9 @@ fetch (api)
             <ul class="generico">
                 <li> <h4>Duración: ${resultados.runtime}  min</h4></li>
                 <li><h4>Estreno: ${resultados.release_date}  </h4></li>
-                <ul class= "generos"> <h4> <a href="./detalle_genero.html">Genero:  </a></h4>
+                <li class= "generos"> <h4> <a href="./detalle_genero.html">Genero:  </a></h4>
                 ${generosLista}
-                </ul>
+                </li>
             </ul>   
         </div>
         <article class="sinopsis">

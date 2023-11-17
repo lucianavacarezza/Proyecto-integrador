@@ -42,6 +42,32 @@ main{
 .cali img {
     height: 20px;
 }
+.recomendaciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.serieRecomendada {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 15px 15px 15px 15px;
+}
+.recomendacion {
+    margin: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+
+}
+
+.boton {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 
  a { 
     text-decoration: none; 

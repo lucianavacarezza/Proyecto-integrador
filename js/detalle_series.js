@@ -104,7 +104,7 @@ this.fetch (api2)
         let url2 = `./detalle_peli.html?id=${data2.results[i].id};`
         contenedor3.innerHTML += `
         <article class ="recomendacion" >
-        <a href = ${url2}"> <img src = "https://image.tmdb.org/t/p/w185/${data2.results[i].poster_path}" > </a>
+        <a href = ${url2}"> <img class = "serieRecomendada" src = "https://image.tmdb.org/t/p/w185/${data2.results[i].poster_path}" > </a>
         </article>
         `
     }
