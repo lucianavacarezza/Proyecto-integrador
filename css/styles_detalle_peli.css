@@ -18,6 +18,30 @@ main{
     display: flex;
     flex-direction: column;
 }
+.recomendaciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.peliRecomendada {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 15px 15px 15px 15px;
+}
+.recomendacion {
+    margin: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    
+
+}
+.boton {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 
 .mitad1 { 
     display: flex;
