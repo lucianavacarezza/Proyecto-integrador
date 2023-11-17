@@ -79,6 +79,9 @@ main{
    margin: 5px;
    flex-direction: row;
 }
+#reviews{
+    color: #c6c6c6;
+}
 .calificacion,.fav {
 
     text-align: center;
