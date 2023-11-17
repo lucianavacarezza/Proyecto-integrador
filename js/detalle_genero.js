@@ -18,9 +18,7 @@ let noExiste= document.querySelector("#noExisteGenero")
 let link_generos_series= `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}`; //me falta filtrarlas,pasandole el id 
 let link_generos_pelis= `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`;
 let contador= 1 
-
-tit_genero.innerText= `Resultados para el genero ${nombreGenero}`
-tit_genero.style.color='#c6c6c6'
+let mensaje= "Hubo un error, el genero que selecciono no existe"
 
 fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch 
 
@@ -29,8 +27,7 @@ fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch
 })
 .then(function(data) {
     console.log(data)
-    if (data.results.length == 0 ) {
-        let mensaje= "Hubo un error, el genero que selecciono no existe"
+    if (data.results == null ) {  
         alert(mensaje)
         noExiste.innerHTML+= 
         `<h1>No existe/no se encontro un genero con el nombre solicitado</h1>`
@@ -41,15 +38,24 @@ fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch
 
 
     }else{
+
+        tit_genero.innerText= `Resultados para el genero ${nombreGenero}`
+        tit_genero.style.color='#c6c6c6'
+
         for(let i=0; i<5 ; i++){
+            if (data.results[i].genre == idGen ){
 
             seccionSeries.innerHTML+=
 
-        `    <article class="mismoGenero">
-                    <a href="./detalle_series.html"><img class="imagen_generos" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
-                    <h2 class="tituloPeliGenero"><a class="link" href="./detalle_series.html"></a>${data.results[i].name}</a></h2> 
-                    <a class="link" href="./detalle_series.html">${data.results[i].first_air_date}</a>
-            </article>`
+            `    <article class="mismoGenero">
+                        <a href="./detalle_series.html"><img class="imagen_generos" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
+                        <h2 class="tituloPeliGenero"><a class="link" href="./detalle_series.html"></a>${data.results[i].name}</a></h2> 
+                        <a class="link" href="./detalle_series.html">${data.results[i].first_air_date}</a>
+                </article>`
+            }
+
+        
+
         }
         contador += 1
 
@@ -72,11 +78,17 @@ fetch(link_generos_pelis)
 })
 .then(function(data) {
     console.log(data)
-    if (data.results.length == 0 ) {
-        let mensaje= "Hubo un error, el genero que selecciono no existe"
+    if (nombreGenero == null ) {
+        
+        
         alert(mensaje)
-        noExiste.innerHTML+= 
-        `<h1>No existe/no se encontro un genero con el nombre solicitado</h1>`
+
+        tit_genero.innerHTML+= 
+        `No existe/no se encontro un genero con el nombre solicitado`
+        document.querySelector("#tituloSecundario").style.display= "none"
+        document.querySelector("#contenedorSeries").style.display= "none"
+        document.querySelector("#contenedorPelis").style.display="none"
+        document.querySelector("#tituloSecundario2").style.display="none"
         
         
 
@@ -84,6 +96,7 @@ fetch(link_generos_pelis)
 
 
     }else{
+
         for(let i=0; i<5 ; i++){
             seccionPelis.innerHTML+=
 
