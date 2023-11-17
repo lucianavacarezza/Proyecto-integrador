@@ -106,6 +106,20 @@ boton.addEventListener("click", function(e){
     .catch (function(error3){
         console.log(error3)
 })
+})
 
-
+let api3 = `https://api.themoviedb.org/3/tv/${series_id}/videos?api_key=${apiKey}`
+let contenedor4 = document.querySelector (".trailer")
+fetch(api3)
+.then(function(response4){
+    return response4.json()
+})
+.then(function(data3){
+    console.log(data3)
+    if (data3.results.length == 0){
+        contenedor4.innerHTML +=
+        `<p class= "aviso" > NO HAY TRAILERES DISPONIBLES </p>`
+    }
+    else {contenedor4.innerHTML += 
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/${data3.results[0].key}?si=owGirNL45lrh-asG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`}
 })
