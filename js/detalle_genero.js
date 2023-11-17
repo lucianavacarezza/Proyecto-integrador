@@ -43,12 +43,15 @@ fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch
         tit_genero.style.color='#c6c6c6'
 
         for(let i=0; i < 6 ; i++){
+            let url2 = `./detalle_series.html?id=${data.results[i].id};`
+
+            
 
                 seccionSeries.innerHTML+=
                 `    <article class="mismoGenero">
-                            <a href="./detalle_series.html"><img class="imagen_generos" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
-                            <h2 class="tituloPeliGenero"><a class="link" href="./detalle_series.html"></a>${data.results[i].name}</a></h2> 
-                            <a class="link" href="./detalle_series.html">${data.results[i].first_air_date}</a>
+                            <a href=${url2}><img class="imagen_generos" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
+                            <h2 class="tituloPeliGenero"><a class="link" href=${url2}></a>${data.results[i].name}</a></h2> 
+                            <a class="link" href=${url2}>${data.results[i].first_air_date}</a>
                     </article>`
                 }
 
@@ -97,11 +100,12 @@ fetch(link_generos_pelis)
     }else{
             for(let i=0; i<6 ; i++){
 
+                let url = `./detalle_peli.html?id=${data.results[i].id};`
                 seccionPelis.innerHTML+=
             `    <article class="mismoGenero">
-                        <a href="./detalle_series.html"><img class="imagen_generos" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
-                        <h2 class="tituloPeliGenero"> <a class= "link" href="./detalle_peli.html">${data.results[i].title}</a></h2> 
-                        <a class="link" href="./detalle_series.html">${data.results[i].release_date}</a>
+                        <a href=${url}><img class="imagen_generos" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
+                        <h2 class="tituloPeliGenero"> <a class= "link" href=${url}>${data.results[i].title}</a></h2> 
+                        <a class="link" href=${url}>${data.results[i].release_date}</a>
                 </article>`
             }
             contador += 1
