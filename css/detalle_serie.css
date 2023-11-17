@@ -47,6 +47,10 @@ main{
     text-decoration: none; 
     color: #000; 
  }
+ .igilmore {
+    justify-content: center;
+    border-radius: 15px 15px 15px 15px;
+ }
 
 .serie {
     display: flex;
@@ -54,12 +58,6 @@ main{
     width: 100%;
     justify-content: center;
     align-items: center;    
-}
-.igilmore {
-    width: 600px;
-    height: 800px;
-    justify-content: center;
-    
 }
 
 .otra_mitad{ 

@@ -10,6 +10,14 @@ background-color: black;
 a { 
   text-decoration: none; color: #000;  /* text-decoration es negrita, cursiva y lo otro el color */
 }
+.link { 
+    display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     text-decoration: none; color: #c6c6c6;  /* text-decoration es negrita, cursiva y lo otro el color */
+    margin-bottom: 10px;
+  }
 
 #contenedorSeries{
     display: flex;
@@ -41,18 +49,23 @@ a {
     font-size: x-large;
     margin-left: 10px;
 }
-
+#tituloSecundario2 {
+    justify-content: flex-start;
+    color: #c6c6c6;
+    font-size: x-large;
+    margin-left: 10px;
+}
 .mismoGenero {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #4a4fa2;
-    height: 350px;
-    width: 200px;
-    border-radius: 15px 15px 15px 15px; 
-    margin-bottom: 5%;
-    margin-left: 2%;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   background-color: #4a4fa2;
+   height: 400.5x;
+   width: 200px;
+   border-radius: 15px 15px 15px 15px; 
+   margin-bottom: 10%;
+   margin-left: 2%;
  
  }
 
@@ -62,21 +75,32 @@ a {
     margin: 0;
     border-radius: 15px 15px 15px 15px;
 }
-.link {
-    justify-content: center;
-    text-decoration: none;
-    color: #c6c6c6;
+.link { 
+    display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     text-decoration: none; color: #c6c6c6;  /* text-decoration es negrita, cursiva y lo otro el color */
     margin-bottom: 10px;
 }
 
-    .noExiste {
-        
+    #noExisteGenero {
+
+        display: flex;
         justify-content: center;
-        font-size: 25px;
+        font-size: xx-large;
         color: #c6c6c6;
         height: 600px;
-
     }
+h2.tituloPeliGenero { 
+    display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     text-decoration: none; color: #c6c6c6;  /* text-decoration es negrita, cursiva y lo otro el color */
+    margin-bottom: 10px;
+  }
+    
 
 
 

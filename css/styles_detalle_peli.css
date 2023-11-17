@@ -71,10 +71,8 @@ a {
      
 }
 .imatilda {  
-width: 600px;
-height: 800px;
 justify-content: center;
-    
+border-radius: 15px 15px 15px 15px;
 }
 
 .otra_mitad{ 

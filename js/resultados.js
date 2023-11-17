@@ -6,7 +6,7 @@ let queryStringObj= new URLSearchParams(queryString);
 let valor= queryStringObj.get("buscador"); //valor query que voy a usar
 let contador= 0 //utilizo un contador para poder recorrer mi lista de resultados
 
-let link_busquedas= `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${valor}`; //formo un link en base a mi parametro valor
+let link_busquedas= `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${valor}`; //formo un link en base a mi parametro valor
 let resultadospelis= document.querySelector(".resultados") //selecciono la parte del html que quiero trabajar
 fetch(link_busquedas) //accedo con el valor a los resultados parecidos a la busqueda dentro de mi api
 .then(function(respuesta){
@@ -36,15 +36,30 @@ fetch(link_busquedas) //accedo con el valor a los resultados parecidos a la busq
         
         
         for(let i=0; i<6 ; i++){
+            if(data.results[i].media_type == "tv"){
+                document.querySelector(".resultados").innerHTML += `
+                <article class="parecidobusqueda">
+                        <a href="./detalle_series.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w345/${data.results[i].poster_path}" alt=""></a>
+                        <h2 class="tituloparecido"><a class="link" href="./detalle_series.html">${data.results[i].title}</a></h2> 
+                        <a class="link" href="./detalle_series.html">${data.results[i].release_date}</a>
+                </article>
+                `
+
+            }else if (data.results[i].media_type == "movie"){
+                document.querySelector(".resultados").innerHTML+=
+
+                `
+                <article class="parecidobusqueda">
+                        <a href="./detalle_peli.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w345/${data.results[i].poster_path}" alt=""></a>
+                        <h2 class="tituloparecido"> <a class="link" href="./detalle_series.html">${data.results[i].title}</a></h2> 
+                        <a class= "link" href="./detalle_peli.html"> ${data.results[i].release_date}</a>
+                </article>
+                `
+
+
+            }
             
             
-            document.querySelector(".resultados").innerHTML += `
-            <article class="parecidobusqueda">
-                    <a href="./detalle_series.html"><img class="imagen_resultados" src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt=""></a>
-                    <h2 class="tituloparecido"><a class="link" href="./detalle_series.html">${data.results[i].title}</a></h2> 
-                    <a class="link" href="./detalle_series.html">${data.results[i].release_date}</a>
-            </article>
-            `
         } //ver el link de detalle porque está para series pero puede ser película.
         contador += 1
         
