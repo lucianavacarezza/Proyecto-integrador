@@ -147,7 +147,7 @@ fetch(api3)
     `<iframe width="560" height="315" src="https://www.youtube.com/embed/${data3.results[0].key}?si=owGirNL45lrh-asG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>` }
 })
 
-let reviews = document.querySelector("#reviews")
+let reviews = document.querySelector("#reviewspelis")
 let reviews_pelis= `https://api.themoviedb.org/3/movie/${movie_id}/reviews?api_key=${apiKey}`
 let iterador = 0
 fetch(reviews_pelis)
@@ -162,9 +162,9 @@ fetch(reviews_pelis)
     reviews.innerHTML+=
     
         `
-        <h3 class="opinion" >Opiniones: </h3>
-        <p class= "comentario" > ${data4.results[i].content}</p>
-        <p class= "autor" > - ${data4.results[i].author}</p>
+        <h3 class="opinion" >Reviews: </h3>
+        <p class= "comentario" > ${data4.results[iterador].content}</p>
+        <p class= "autor" > - ${data4.results[iterador].author}</p>
         
         `
 

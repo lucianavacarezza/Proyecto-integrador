@@ -126,3 +126,38 @@ fetch(api3)
     else {contenedor4.innerHTML += 
     `<iframe width="560" height="315" src="https://www.youtube.com/embed/${data3.results[0].key}?si=owGirNL45lrh-asG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`}
 })
+
+
+let reviewsS= document.querySelector("#reviewsSeries")
+let reviews_series= `https://api.themoviedb.org/3/tv/${series_id}/reviews?api_key=${apiKey}`
+let iterador = 0
+fetch(reviews_series)
+
+.then(function (response){
+    return response.json()
+})
+
+.then(function(data4) {   
+
+    console.log(data4)
+    reviewsS.style.color= "#c6c6c6"
+
+    reviewsS.innerHTML+=
+    
+        `
+        <h3 class="opinion" >Reviews: </h3>
+        <p class= "comentario" > ${data4.results[iterador].content}</p>
+        <p class= "autor" > - ${data4.results[iterador].author}</p>
+        
+        `
+
+    
+    
+   
+
+
+})
+
+.catch (function(error){
+    console.log(error)
+})
