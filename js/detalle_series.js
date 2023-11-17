@@ -10,8 +10,6 @@ let series_id = queryStringDetalle.get("id")
 let api = `https://api.themoviedb.org/3/tv/${series_id}?api_key=${apiKey}`
 
 fetch (api)
-//fetch (`https://api.themoviedb.org/3/movie/?api_key=${apiKey}&query=${movie_id}`) 
-
 .then(function(response){
     return response.json()
 })
@@ -37,21 +35,20 @@ fetch (api)
 `
 })
     
-
 fetch (api)
-
 .then(function(response2){
     return response2.json()
 })
-
 .then (function(resultados) {
     console.log (resultados)
 
     let generosLista = ``
         for (i=0; i< resultados.genres.length; i++){
+            let genero =  resultados.genres[i]
+            url= `./detalle_genero.html?idGenero=${genero.id}&name=${genero.name}`
             generosLista +=
             `
-            <li><p> <a href = './detalle_genero.html' > ${resultados.genres[i].name} </a> </p></li> 
+            <li><p> <a href = './detalle_genero.html?idGenero=${resultados.genres[i].id}&name=${resultados.genres[i].name}' > ${resultados.genres[i].name} </a> </p></li> 
             ` //sigue sin andar genero
         }
 
@@ -77,34 +74,31 @@ fetch (api)
         </article>
 
     `
+    console.log('termina el fetch')
     })
-
 .catch(function(error){
     console.log(error)
     })
 
 let contenedor3 = document.querySelector (".recomendaciones")
-let queryDetalle2 = location.search;
-let queryStringDetalle2 = new URLSearchParams(queryDetalle)
-let series_id_rec = queryStringDetalle.get("id")
 
-let api2 = `https://api.themoviedb.org/3/tv/${series_id_rec}/recommendations?api_key=${apiKey}`
-let contador = 1
-
-let boton = document.querySelector(".boton")
-
-boton = addEventListener ("click" , function(){
-this.fetch (api2)
-.then (function(response3){ //no anda el then
-    return response3.json()
-})
-.then (function(data2){
-    console.log (data2)
-    for (let i=0; i<data2.results.length; i++){
+let boton = document.querySelector(".boton2")
+console.log(boton.addEventListener)
+boton.addEventListener("click", function(e){
+    console.log('Reconoce el evento')
+    console.log(e)
+    
+    fetch (`https://api.themoviedb.org/3/tv/${series_id}/recommendations?api_key=${apiKey}`)
+    .then (function(response3){ //no anda el then
+        return response3.json()
+    })
+    .then (function(data2){
+        console.log (data2)
+        for (let i=0; i<10; i++){        
         let url2 = `./detalle_peli.html?id=${data2.results[i].id};`
         contenedor3.innerHTML += `
         <article class ="recomendacion" >
-        <a href = ${url2}"> <img class = "serieRecomendada" src = "https://image.tmdb.org/t/p/w185/${data2.results[i].poster_path}" > </a>
+        <a href = ${url2}"> <img src = "https://image.tmdb.org/t/p/w185/${data2.results[i].poster_path}" > </a>
         </article>
         `
     }
@@ -115,4 +109,6 @@ this.fetch (api2)
 .catch (function(error3){
     console.log(error3)
 })
+
+
 })

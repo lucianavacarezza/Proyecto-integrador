@@ -53,9 +53,13 @@ fetch (api)
 
     let generosLista = ``
     for (i=0; i< resultados.genres.length; i++){
+        let genero =  resultados.genres[i]
+        url= `./detalle_genero.html?idGenero=${genero.id}&name=${genero.name}`
+
         generosLista +=
+       
         `
-        <li ><p> <a class= "generoIndividual" href = './detalle_genero.html' > ${resultados.genres[i].name} </a> </p></li> 
+        <li><p> <a href = './detalle_genero.html' > ${resultados.genres[i].name} </a> </p></li> 
         ` //sigue sin andar genero
     }
 
@@ -98,9 +102,9 @@ let api2 = `https://api.themoviedb.org/3/movie/${movie_id_rec}/recommendations?a
 let contador = 1
 
 
-let boton = document.querySelector(".boton")
+let boton2 = document.querySelector(".boton2")
 
-boton = addEventListener ("click" , function(){
+boton2.addEventListener ("click" , function(){
 fetch (api2)
 .then (function(response3){ //no anda el then
     return response3.json()
@@ -116,7 +120,7 @@ fetch (api2)
         </article>
         `
     }
-    contador += 1
+    boton2.style.display='none'
     
 })
 
