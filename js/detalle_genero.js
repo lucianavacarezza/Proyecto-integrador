@@ -43,7 +43,13 @@ fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch
         tit_genero.style.color='#c6c6c6'
 
         for(let i=0; i < 6 ; i++){
-            let url2 = `./detalle_series.html?id=${data.results[i].id};`
+            if (data.results.lenght == 0){
+                document.querySelector("#tituloSecundario").innerText= " "
+
+
+            }else{
+                let url2 = `./detalle_series.html?id=${data.results[i].id};`
+                document.querySelector("#tituloSecundario").innerText= "Series:"
 
             
 
@@ -54,6 +60,11 @@ fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch
                             <a class="link" href=${url2}>${data.results[i].first_air_date}</a>
                     </article>`
                 }
+
+            }
+                
+            
+            
 
         
 
@@ -98,6 +109,11 @@ fetch(link_generos_pelis)
 
 
     }else{
+        if (data.results.lenght == 0){
+            document.querySelector("#tituloSecundario2").innerText= " "
+        }else{
+            document.querySelector("#tituloSecundario2").innerText= "Peliculas: "
+
             for(let i=0; i<6 ; i++){
 
                 let url = `./detalle_peli.html?id=${data.results[i].id};`
@@ -110,6 +126,7 @@ fetch(link_generos_pelis)
             }
             contador += 1
         }
+        }
 
 
     
@@ -118,7 +135,5 @@ fetch(link_generos_pelis)
 .catch(function(error){
     console.log(error)
 })
-
-
 
 

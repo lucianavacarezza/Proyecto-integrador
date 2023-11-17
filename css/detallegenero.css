@@ -44,6 +44,7 @@ a {
     text-align: center;
 }
 #tituloSecundario {
+    display: block;
     justify-content: flex-start;
     color: #c6c6c6;
     font-size: x-large;
@@ -110,49 +111,3 @@ h2.tituloPeliGenero {
 
 
 
-
-
-@media (max-width: 550px) {
-    .annie-ft {
-        height: 90px;
-        width: 160px;
-        margin: 0;
-        border-radius: 15px 15px 15px 15px;
-        margin-left: 5%;  
-   }
-    
-    .go-ft {
-        height: 90px;
-        width: 160px;
-        margin: 0;
-        border-radius: 15px 15px 15px 15px;
-        margin-left: 5%;
-   }
-    
-    .sing-ft {
-        height: 90px;
-        width: 160px;
-        margin: 0;
-        border-radius: 15px 15px 15px 15px;
-        margin-left: 5%;
-   }
-    .matilda-ft {
-        height: 90px;
-        width: 160px;
-        margin: 0;
-        border-radius: 15px 15px 15px 15px;
-        margin-left: 5%;
-   }
-   .titulo-annie {
-    margin-left: 5%;
-    }
-.titulo-go {
-    margin-left: 5%;
-        }
-.titulo-sing {
-    margin-left: 5%;
-        }
-.titulo-matilda {
-    margin-left: 5%;
-        }
-}
