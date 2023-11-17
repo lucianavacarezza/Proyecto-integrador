@@ -14,13 +14,18 @@ li {
 }
 
 .link { 
-  text-decoration: none; color: #c6c6c6;  /* text-decoration es negrita, cursiva y lo otro el color */
+  display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   text-decoration: none; color: #c6c6c6;  /* text-decoration es negrita, cursiva y lo otro el color */
   margin-bottom: 10px;
 }
 
 a {
    text-decoration: none;
    color: #000;
+
 }
 
 main {
@@ -34,6 +39,7 @@ main {
    align-items: flex-start;
    color: #c6c6c6;
    font-size: xx-large;
+   margin-left: 3%;
 }
 
 .carrusel1 {
@@ -42,7 +48,7 @@ main {
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
-   margin-top: 5%;
+   
 
    
 }
@@ -53,35 +59,36 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   height: 350px;
+   height: 400.5x;
    width: 200px;
    border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
+   margin-bottom: 10%;
    margin-left: 2%;
 
 
 }
 
 .imagen_pelis{
-   height: 200px;
+   height: 230px;
    width: 200px;
-   margin: 0; 
-   border-radius: 15px 15px 15px 15px;
+   margin: 0;
+   border-radius: 15px 15px 15px 15px; 
   
 }
 
 .titulos_pelis{
-   margin: 0%;
-   margin-top: 8%;
    display: flex;
    text-align: center;
    justify-content: center;
+   margin: 0%;
+   margin-top: 8%  
 }
 
 
 .lomasvistoserie {
    color:  #c6c6c6;
    font-size: xx-large;
+   margin-left: 3%;
 }
 
 .carrusel2 {
@@ -90,7 +97,6 @@ main {
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
-   margin-top: 5%;
 }
 
 .serie {
@@ -99,15 +105,15 @@ main {
    justify-content: flex-start;
    align-items: center;
    background-color: #4a4fa2;
-   height: 350px;
+   height: 400.5x;
    width: 200px;
    border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
+   margin-bottom: 10%;
    margin-left: 2%;
 }
 
 .imagen_serie {
-   height: 200px;
+   height: 230px;
    width: 200px;
    margin: 0;
    border-radius: 15px 15px 15px 15px; 
@@ -121,248 +127,20 @@ main {
    margin-top: 8%   
 }
 
-.gilmoregirls {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fotogilmoregirls {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.titulosgilmoregirls {
-   margin: 0%;
-   margin-top: 6%;
-}
-
-.go {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fotogo {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.titulogo {
-   margin: 0%;
-   margin-top: 2%;
-   text-align: center;
-}
-
-.los100 {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fotolos100 {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.titulolos100 {
-   margin: 0%;
-   margin-top: 8%;
-}
-
-.blackmirror {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fotoblackmirror {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.tituloblackmirror {
-   margin: 0%;
-   margin-top: 8%;
-}
-
-.peliculasmasvaloradas {
-   color:  #c6c6c6;
-   font-size: xx-large;
-}
-
 .carrusel3 {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
-   margin-top: 5%;
-}
 
-.lapurga {
+   
+}
+.peliculasmasvaloradas {
    display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
+   flex-direction: row;
+   align-items: flex-start;
+   color: #c6c6c6;
+   font-size: xx-large;
+   margin-left: 3%;
 }
-
-.fotoslapurga {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.titulolapurga {
-   margin: 0%;
-   margin-top: 2%;
-   text-align: center;
-}
-
-.sing {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fotosing {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.titulosing {
-   margin: 0%;
-   margin-top: 8%;
-   text-align: center;
-}
-
-.matilda {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fotomatilda {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.titulomatilda {
-   margin: 0%;
-   margin-top: 2%;
-   text-align: center;
-   margin-left: 2%;
-}
-
-.terminator {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fototerminator {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.tituloterminator {
-   margin: 0%;
-   margin-top: 2%;
-   text-align: center;
-}
-
-.transformer {
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
-   background-color: #4a4fa2;
-   height: 200px;
-   width: 200px;
-   border-radius: 15px 15px 15px 15px; 
-   margin-bottom: 5%;
-   margin-left: 2%;
-}
-
-.fototransformer {
-   height: 112px;
-   width: 200px;
-   margin: 0;
-   border-radius: 15px 15px 15px 15px; 
-}
-
-.titulotransformer {
-   margin: 0%;
-   margin-top: 8%;
-   text-align: center;
-} 
