@@ -30,7 +30,7 @@ fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch
     if (data.results == null ) {  
         alert(mensaje)
         noExiste.innerHTML+= 
-        `<h1>No existe/no se encontro un genero con el nombre solicitado</h1>`
+        `<h1> No existe/no se encontro un genero con el nombre solicitado </h1>`
         
         
 
@@ -42,7 +42,7 @@ fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch
         tit_genero.innerText= `Resultados para el genero ${nombreGenero}`
         tit_genero.style.color='#c6c6c6'
 
-        for(let i=0; i<5 ; i++){
+        for(let i=0; i<data.results.lengh ; i++){
             if (data.results[i].genre == idGen ){
 
             seccionSeries.innerHTML+=
