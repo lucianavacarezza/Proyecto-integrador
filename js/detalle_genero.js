@@ -29,6 +29,7 @@ fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch
     console.log(data)
     if (data.results == null ) {  
         alert(mensaje)
+        tit_genero.style.display="none"
         noExiste.innerHTML+= 
         `<h1> No existe/no se encontro un genero con el nombre solicitado </h1>`
         
@@ -38,6 +39,7 @@ fetch(link_generos_series)// filtrar usando id, lo mismo en el otro fetch
 
 
     }else{
+
 
         tit_genero.innerText= `Resultados para el genero ${nombreGenero}`
         tit_genero.style.color='#c6c6c6'
@@ -83,8 +85,9 @@ fetch(link_generos_pelis)
         
         alert(mensaje)
 
-        tit_genero.innerHTML+= 
-        `No existe/no se encontro un genero con el nombre solicitado`
+        noExiste.innerHTML+= 
+        `No existe/no se encontro un genero con el nombre solicitado`        
+        tit_genero.style.display="none"
         document.querySelector("#tituloSecundario").style.display= "none"
         document.querySelector("#contenedorSeries").style.display= "none"
         document.querySelector("#contenedorPelis").style.display="none"
