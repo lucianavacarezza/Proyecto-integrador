@@ -98,9 +98,9 @@ let api2 = `https://api.themoviedb.org/3/movie/${movie_id_rec}/recommendations?a
 let contador = 1
 
 
-let boton = document.querySelector(".boton")
+let boton2 = document.querySelector(".boton2")
 
-boton = addEventListener ("click" , function(){
+boton2.addEventListener ("click" , function(){
 fetch (api2)
 .then (function(response3){ //no anda el then
     return response3.json()
@@ -116,7 +116,7 @@ fetch (api2)
         </article>
         `
     }
-    contador += 1
+    boton2.style.display='none'
     
 })
 

@@ -10,8 +10,6 @@ let series_id = queryStringDetalle.get("id")
 let api = `https://api.themoviedb.org/3/tv/${series_id}?api_key=${apiKey}`
 
 fetch (api)
-//fetch (`https://api.themoviedb.org/3/movie/?api_key=${apiKey}&query=${movie_id}`) 
-
 .then(function(response){
     return response.json()
 })
@@ -37,13 +35,10 @@ fetch (api)
 `
 })
     
-
 fetch (api)
-
 .then(function(response2){
     return response2.json()
 })
-
 .then (function(resultados) {
     console.log (resultados)
 
@@ -77,25 +72,24 @@ fetch (api)
         </article>
 
     `
+    console.log('termina el fetch')
     })
-
 .catch(function(error){
     console.log(error)
     })
 
 let contenedor3 = document.querySelector (".recomendaciones")
-let queryDetalle2 = location.search;
-let queryStringDetalle2 = new URLSearchParams(queryDetalle)
-let series_id_rec = queryStringDetalle.get("id")
 
-let boton = document.querySelector(".boton")
-
-boton = addEventListener ("click" , function(){
-    fetch (`https://api.themoviedb.org/3/tv/${series_id_rec}/recommendations?api_key=${apiKey}`)
+let boton = document.querySelector(".boton2")
+console.log(boton.addEventListener)
+boton.addEventListener("click", function(e){
+    console.log('Reconoce el evento')
+    console.log(e)
+    
+    fetch (`https://api.themoviedb.org/3/tv/${series_id}/recommendations?api_key=${apiKey}`)
     .then (function(response3){ //no anda el then
         return response3.json()
     })
-
     .then (function(data2){
         console.log (data2)
         for (let i=0; i<10; i++){
@@ -105,10 +99,8 @@ boton = addEventListener ("click" , function(){
         <a href = ${url2}"> <img class = "serie_recomendada" src = "https://image.tmdb.org/t/p/w185/${data2.results[i].poster_path}" > </a>
         </article>`
         }
+        boton.style.display='none'
     })
-
-    
-
     .catch (function(error3){
         console.log(error3)
 })
