@@ -53,9 +53,13 @@ fetch (api)
 
     let generosLista = ``
     for (i=0; i< resultados.genres.length; i++){
+        let genero =  resultados.genres[i]
+        url= `./detalle_genero.html?idGenero=${genero.id}&name=${genero.name}`
+
         generosLista +=
+       
         `
-        <li><p> <a href = './detalle_genero.html' > ${resultados.genres[i].name} </a> </p></li> 
+        <li><p> <a href = './detalle_genero.html?idGenero=${resultados.genres[i].id}&name=${resultados.genres[i].name}' > ${resultados.genres[i].name} </a> </p></li>
         ` //sigue sin andar genero
     }
 
