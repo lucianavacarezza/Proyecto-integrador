@@ -130,6 +130,7 @@ fetch(api3)
 
 let reviewsS= document.querySelector("#reviewsSeries")
 let reviews_series= `https://api.themoviedb.org/3/tv/${series_id}/reviews?api_key=${apiKey}`
+
 let iterador = 0
 fetch(reviews_series)
 
@@ -145,9 +146,9 @@ fetch(reviews_series)
     reviewsS.innerHTML+=
     
         `
-        <h3 class="opinion" >Reviews: </h3>
+        <h3 class= "opinion" > Reviews: </h3>
         <p class= "comentario" > ${data4.results[iterador].content}</p>
-        <p class= "autor" > - ${data4.results[iterador].author}</p>
+        <p class= "autor" > -${data4.results[iterador].author}</p>
         
         `
 

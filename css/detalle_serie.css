@@ -148,7 +148,9 @@ main{
     margin-right: 5px;
 }
 
-
+.opinion{
+    background-color: #c6c6c6;
+    color: #000;}
 
 .sinopsis, .rep {
     display: flex;

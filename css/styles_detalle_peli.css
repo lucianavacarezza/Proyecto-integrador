@@ -192,6 +192,7 @@ border-radius: 15px 15px 15px 15px;
     background-color:#c6c6c6;
     border-radius: 15px 15px 15px 15px;
 }
+
 .texto {
     border-radius: 15px 15px 15px 15px;
     display: flex;
@@ -200,7 +201,10 @@ border-radius: 15px 15px 15px 15px;
     background-color: #c6c6c6;
     height: 200px;
 }
-
+.opinion{
+    background-color: #c6c6c6;
+    color: #000;
+}
 .texto p {
     margin-right: 15 px;
     margin-left: 15px;
