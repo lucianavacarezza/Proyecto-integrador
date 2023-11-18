@@ -19,10 +19,10 @@ fetch (api)
     contenedor.innerHTML += `
     <div class="cali_fav">
         <article class="cali">
-            <h4 class="calificacion">Calificación:</h4>
+            <h4 class="calificacion">Calificación: </h4>
             <p class="rating"> ${data.vote_average} </p>
         </article>
-        <article><h4 class="fav"><a href="./favoritos.html"> Añadir a favoritos</a></h4></article>
+        
                 
     </div>
            

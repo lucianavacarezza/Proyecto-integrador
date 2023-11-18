@@ -27,9 +27,7 @@ fetch (api)
             <h4 class="calificacion">Calificacion: </h4>
             <p class="rating"> ${data.vote_average} </p>
         </article>
-    <article>
-        <h4 class="fav">Añadir a <a href="./favoritos.html"> Favoritos</a></h4>
-    </article>
+    
     </div>
 
     <article class="pelicula">    
